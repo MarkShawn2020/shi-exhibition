@@ -35,6 +35,8 @@
     "@arcjet/next": "^1.0.0-beta.8",
     "@clerk/localizations": "^3.18.0",
     "@clerk/nextjs": "^6.24.0",
+    "@clerk/types": "^4.64.0",
+    "@commitlint/types": "^19.8.1",
     "@electric-sql/pglite": "^0.3.4",
     "@hookform/resolvers": "^5.1.1",
     "@logtape/logtape": "^1.0.4",
@@ -50,6 +52,7 @@
     "react-dom": "19.1.0",
     "react-hook-form": "^7.60.0",
     "require-in-the-middle": "^7.5.2",
+    "vite": "^7.0.4",
     "zod": "^4.0.2"
   },
   "devDependencies": {

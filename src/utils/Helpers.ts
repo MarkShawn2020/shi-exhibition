@@ -30,3 +30,7 @@ export const getI18nPath = (url: string, locale: string) => {
 export const isServer = () => {
   return typeof window === 'undefined';
 };
+
+export const cn = (...classes: (string | undefined | null | boolean)[]) => {
+  return classes.filter(Boolean).join(' ');
+};
