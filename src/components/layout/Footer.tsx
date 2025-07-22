@@ -39,7 +39,7 @@ const Footer = () => {
                 />
               </Link>
               <p className="u-paragraph-m text-gray-300 mb-6">
-                让一部分人先机械飞升，最大化思想者的价值。专为知识博主和内容创作者打造的 AI 智能创作平台。
+                Neurora，为创作者而生。
               </p>
               <div className="flex space-x-4">
                 <a href="https://github.com/neurora-ai" className="text-gray-400 hover:text-white transition-colors">
