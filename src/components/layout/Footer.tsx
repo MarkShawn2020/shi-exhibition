@@ -120,7 +120,7 @@ const Footer = () => {
                   placeholder="输入您的邮箱"
                   className="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                 />
-                <button type="button" className="px-4 py-2 bg-primary text-white rounded-md hover:opacity-90 transition-opacity">
+                <button type="button" className="px-4 py-2 bg-primary text-white rounded-md hover:opacity-90 transition-opacity whitespace-nowrap">
                   订阅
                 </button>
               </div>

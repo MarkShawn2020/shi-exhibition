@@ -11,14 +11,15 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navigation = [
-    { name: '文档', href: '/docs' },
-    { name: '示例', href: '/examples' },
+    { name: '特性', href: '/features' },
+    { name: '案例', href: '/cases' },
+    { name: '社区', href: '/community' },
+    { name: '定价', href: '/pricing' },
     { name: '博客', href: '/blog' },
-    { name: '关于', href: '/about' },
   ];
 
   return (
-    <header className="w-full bg-background-main border-b border-border-default/20">
+    <header className="sticky top-0 z-50 w-full bg-background-main border-b border-border-default/20 backdrop-blur-sm">
       <Container>
         <div className="flex items-center justify-between py-4 lg:py-6">
           {/* Logo */}
