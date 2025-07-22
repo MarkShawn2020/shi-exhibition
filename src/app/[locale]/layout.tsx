@@ -68,7 +68,6 @@ export default async function RootLayout(props: {
           <PostHogProvider>
             {props.children}
           </PostHogProvider>
-          <DemoBadge />
         </NextIntlClientProvider>
       </body>
     </html>
