@@ -1,0 +1,219 @@
+{
+  "Header": {
+    "features": "特性",
+    "cases": "案例",
+    "community": "社区",
+    "pricing": "定价",
+    "blog": "博客",
+    "login": "登录",
+    "try_now": "立即体验"
+  },
+  "RootLayout": {
+    "home_link": "首页",
+    "about_link": "关于我们",
+    "counter_link": "计数器",
+    "portfolio_link": "作品集",
+    "sign_in_link": "登录",
+    "sign_up_link": "注册"
+  },
+  "BaseTemplate": {
+    "description": "Neurora，为创作者而生的 AI 智能创作平台",
+    "made_with": "由 <author></author> 精心打造。"
+  },
+  "Index": {
+    "meta_title": "Neurora - 为创作者而生的 AI 智能创作平台",
+    "meta_description": "Neurora，专为知识博主和内容创作者打造的 AI 智能创作平台，让一部分人先机械飞升，最大化思想者的价值。",
+    "sponsors_title": "合作伙伴"
+  },
+  "Counter": {
+    "meta_title": "计数器",
+    "meta_description": "数据库操作示例",
+    "loading_counter": "计数器加载中...",
+    "security_powered_by": "安全保护、机器人检测和频率限制由以下提供支持"
+  },
+  "CounterForm": {
+    "presentation": "计数器存储在数据库中，将根据您提供的值进行递增。",
+    "label_increment": "递增值",
+    "button_increment": "递增",
+    "error_increment_range": "数值必须在 1 到 3 之间"
+  },
+  "CurrentCount": {
+    "count": "计数: {count}"
+  },
+  "About": {
+    "meta_title": "关于我们",
+    "meta_description": "了解 Neurora 团队和我们的使命",
+    "about_paragraph": "欢迎来到 Neurora！我们是一支充满激情的团队，致力于为创作者打造最先进的 AI 智能创作平台。",
+    "translation_powered_by": "翻译服务由以下提供支持"
+  },
+  "Portfolio": {
+    "meta_title": "作品集",
+    "meta_description": "欢迎访问我的作品集页面！",
+    "presentation": "欢迎访问我的作品集页面！在这里您将看到我精心策划的作品和成就集合。通过这个作品集，我希望展示我的专业技能、创造力以及能为您的项目带来的价值。",
+    "portfolio_name": "作品集 {name}",
+    "error_reporting_powered_by": "错误报告由以下提供支持",
+    "coverage_powered_by": "代码覆盖率由以下提供支持"
+  },
+  "PortfolioSlug": {
+    "meta_title": "作品集 {slug}",
+    "meta_description": "作品集 {slug} 详情",
+    "header": "作品集 {slug}",
+    "content": "为企业活动创建了一套推广材料和品牌元素。精心设计了视觉统一的主题，包括标志、海报、横幅和数字资产。在融入客户品牌标识的同时，注入了现代和创新的设计理念。",
+    "code_review_powered_by": "代码审查由以下提供支持"
+  },
+  "SignIn": {
+    "meta_title": "登录",
+    "meta_description": "通过我们用户友好的登录流程，轻松登录您的账户。"
+  },
+  "SignUp": {
+    "meta_title": "注册",
+    "meta_description": "通过我们直观的注册流程，轻松创建账户。"
+  },
+  "Dashboard": {
+    "meta_title": "控制台",
+    "hello_message": "您好，{email}！",
+    "alternative_message": "想要使用相同技术栈更快地构建您的 SaaS？试试 <url></url>。"
+  },
+  "UserProfile": {
+    "meta_title": "用户资料"
+  },
+  "Footer": {
+    "company_title": "公司",
+    "product_title": "产品", 
+    "support_title": "支持",
+    "newsletter_title": "订阅更新",
+    "newsletter_description": "获取最新的产品更新和技术资讯。",
+    "email_placeholder": "输入您的邮箱",
+    "subscribe_button": "订阅",
+    "rights_reserved": "保留所有权利。",
+    "links": {
+      "company": {
+        "about": "关于我们",
+        "careers": "加入我们", 
+        "press": "媒体报道",
+        "blog": "博客"
+      },
+      "product": {
+        "platform": "Neurora 平台",
+        "pricing": "定价方案",
+        "api_docs": "API 文档",
+        "help_docs": "帮助文档"
+      },
+      "support": {
+        "help_center": "帮助中心",
+        "contact": "联系我们",
+        "status": "服务状态", 
+        "privacy": "隐私政策"
+      },
+      "legal": {
+        "terms": "服务条款",
+        "privacy": "隐私政策",
+        "cookies": "Cookie 政策"
+      }
+    }
+  },
+  "DashboardLayout": {
+    "dashboard_link": "控制台",
+    "user_profile_link": "管理您的账户",
+    "sign_out": "退出登录"
+  },
+  "HomePage": {
+    "hero_title": "Neurora - 为创作者而生",
+    "hero_description": "专为知识博主和内容创作者打造的 AI 智能创作平台，让一部分人先机械飞升，最大化思想者的价值。",
+    "get_started": "立即开始",
+    "view_docs": "查看文档",
+    "hero_card_title": "AI 创作平台",
+    "hero_card_subtitle": "智能 • 高效 • 专业",
+    "features_title": "为创作者量身打造",
+    "features_description": "集成先进的 AI 技术，提供完整的创作工具链，助力内容创作者实现价值最大化。",
+    "cta_title": "准备开始创作了吗？",
+    "cta_description": "加入数千名创作者，使用 Neurora 打造专业内容，释放创作潜能。",
+    "cta_start": "立即开始",
+    "cta_github": "了解更多",
+    "features": {
+      "nextjs": {
+        "title": "Next.js 15 + App Router",
+        "description": "基于最新的 Next.js 15 和 App Router，支持 React 19 并配置了 TypeScript，提供卓越的开发体验。"
+      },
+      "design": {
+        "title": "现代设计系统", 
+        "description": "完整的设计令牌系统和组件库，遵循现代 UI/UX 设计原则，支持 Tailwind CSS v4。"
+      },
+      "security": {
+        "title": "企业级安全认证",
+        "description": "集成 Clerk 认证系统，支持多因素认证、社交登录等企业级安全特性。"
+      },
+      "performance": {
+        "title": "性能优先",
+        "description": "使用现代构建工具优化，支持 Turbopack、代码分割和性能监控，确保极致体验。"
+      },
+      "i18n": {
+        "title": "国际化就绪",
+        "description": "内置 next-intl 国际化支持，配合 Crowdin 实现专业的多语言工作流。"
+      },
+      "testing": {
+        "title": "质量保证",
+        "description": "完整的测试套件，包含 Vitest、React Testing Library 和 Playwright 端到端测试。"
+      }
+    },
+    "use_cases_title": "适合各种创作场景",
+    "use_cases_description": "无论您是个人知识博主还是企业内容团队，Neurora 都能与您一起扩展创作边界。",
+    "tabs": {
+      "individual": {
+        "label": "个人博主",
+        "title": "个人知识分享",
+        "description": "专为个人知识博主设计，提供内容创作、SEO优化和粉丝互动工具，助力个人品牌建设。"
+      },
+      "team": {
+        "label": "团队协作",
+        "title": "团队内容创作",
+        "description": "支持多人协作编辑、版本控制和内容审核流程，适合内容团队高效协作创作。"
+      },
+      "enterprise": {
+        "label": "企业级",
+        "title": "企业内容营销",
+        "description": "企业级安全和管理功能，支持品牌一致性管理、多渠道发布和数据分析。"
+      },
+      "education": {
+        "label": "教育培训",
+        "title": "在线教育内容",
+        "description": "专门为教育工作者打造，支持课程内容创作、学习路径设计和学员互动。"
+      }
+    }
+  },
+  "DemoBanner": {
+    "demo_text": "Next.js 模板在线演示 - 由 Neurora 团队开发",
+    "try_auth": "体验认证功能"
+  },
+  "notifications": {
+    "close": "关闭",
+    "success_title": "操作成功",
+    "error_title": "操作失败", 
+    "warning_title": "注意",
+    "info_title": "提示",
+    "save_success": "保存成功",
+    "save_error": "保存失败",
+    "delete_success": "删除成功",
+    "delete_error": "删除失败",
+    "update_success": "更新成功",
+    "update_error": "更新失败",
+    "create_success": "创建成功",
+    "create_error": "创建失败",
+    "network_error": "网络连接失败",
+    "server_error": "服务器错误",
+    "validation_error": "请检查您的输入",
+    "permission_error": "您没有权限执行此操作",
+    "file_upload_success": "文件上传成功",
+    "file_upload_error": "文件上传失败",
+    "copy_success": "已复制到剪贴板",
+    "copy_error": "复制失败",
+    "loading": "加载中...",
+    "please_wait": "请稍候",
+    "operation_completed": "操作完成",
+    "changes_saved": "更改已保存",
+    "no_changes": "没有更改需要保存",
+    "confirm_delete": "确认删除？",
+    "confirm_action": "确认执行此操作？",
+    "action_cannot_be_undone": "此操作无法撤销"
+  }
+}

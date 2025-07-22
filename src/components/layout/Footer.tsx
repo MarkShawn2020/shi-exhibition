@@ -1,27 +1,29 @@
 import Link from 'next/link';
 import React from 'react';
+import { useTranslations } from 'next-intl';
 import { Container } from './Container';
 import { NeuroraIcon } from '../ui/NeuroraIcon';
 
 const Footer = () => {
+  const t = useTranslations('Footer');
   const footerLinks = {
     company: [
-      { name: '关于我们', href: '/about' },
-      { name: '加入我们', href: '#careers' },
-      { name: '媒体报道', href: '#press' },
-      { name: '博客', href: '/blog' },
+      { name: t('links.company.about'), href: '/about' },
+      { name: t('links.company.careers'), href: '#careers' },
+      { name: t('links.company.press'), href: '#press' },
+      { name: t('links.company.blog'), href: '/blog' },
     ],
     product: [
-      { name: 'Lovpen 平台', href: '/products/lovpen' },
-      { name: '定价方案', href: '/pricing' },
-      { name: 'API 文档', href: '/docs/api' },
-      { name: '帮助文档', href: '/docs' },
+      { name: t('links.product.platform'), href: '/products/neurora' },
+      { name: t('links.product.pricing'), href: '/pricing' },
+      { name: t('links.product.api_docs'), href: '/docs/api' },
+      { name: t('links.product.help_docs'), href: '/docs' },
     ],
     support: [
-      { name: '帮助中心', href: '/help' },
-      { name: '联系我们', href: '#contact' },
-      { name: '服务状态', href: '/status' },
-      { name: '隐私政策', href: '/privacy' },
+      { name: t('links.support.help_center'), href: '/help' },
+      { name: t('links.support.contact'), href: '#contact' },
+      { name: t('links.support.status'), href: '/status' },
+      { name: t('links.support.privacy'), href: '/privacy' },
     ],
   };
 
@@ -64,7 +66,7 @@ const Footer = () => {
             {/* Links */}
             <div className="lg:col-span-2">
               <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
-                公司
+                {t('company_title')}
               </h3>
               <ul className="space-y-3">
                 {footerLinks.company.map(link => (
@@ -79,7 +81,7 @@ const Footer = () => {
 
             <div className="lg:col-span-2">
               <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
-                产品
+                {t('product_title')}
               </h3>
               <ul className="space-y-3">
                 {footerLinks.product.map(link => (
@@ -94,7 +96,7 @@ const Footer = () => {
 
             <div className="lg:col-span-2">
               <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
-                支持
+                {t('support_title')}
               </h3>
               <ul className="space-y-3">
                 {footerLinks.support.map(link => (
@@ -109,19 +111,19 @@ const Footer = () => {
 
             <div className="lg:col-span-2">
               <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
-                订阅更新
+                {t('newsletter_title')}
               </h3>
               <p className="text-gray-300 text-sm mb-4">
-                获取最新的产品更新和技术资讯。
+                {t('newsletter_description')}
               </p>
               <div className="flex flex-col sm:flex-row gap-2">
                 <input
                   type="email"
-                  placeholder="输入您的邮箱"
+                  placeholder={t('email_placeholder')}
                   className="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                 />
                 <button type="button" className="px-4 py-2 bg-primary text-white rounded-md hover:opacity-90 transition-opacity whitespace-nowrap">
-                  订阅
+                  {t('subscribe_button')}
                 </button>
               </div>
             </div>
@@ -131,17 +133,17 @@ const Footer = () => {
           <div className="mt-12 pt-8 border-t border-gray-700">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-gray-400 text-sm">
-                © 2025 Neurora Technology. 保留所有权利。
+                © 2025 Neurora Technology. {t('rights_reserved')}
               </p>
               <div className="flex space-x-6 mt-4 md:mt-0">
                 <Link href="/terms" className="text-gray-400 hover:text-white text-sm transition-colors no-underline">
-                  服务条款
+                  {t('links.legal.terms')}
                 </Link>
                 <Link href="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors no-underline">
-                  隐私政策
+                  {t('links.legal.privacy')}
                 </Link>
                 <Link href="/cookies" className="text-gray-400 hover:text-white text-sm transition-colors no-underline">
-                  Cookie 政策
+                  {t('links.legal.cookies')}
                 </Link>
               </div>
             </div>

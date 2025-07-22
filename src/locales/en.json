@@ -1,4 +1,13 @@
 {
+  "Header": {
+    "features": "Features",
+    "cases": "Cases",
+    "community": "Community", 
+    "pricing": "Pricing",
+    "blog": "Blog",
+    "login": "Login",
+    "try_now": "Try Now"
+  },
   "RootLayout": {
     "home_link": "Home",
     "about_link": "About",
@@ -8,13 +17,13 @@
     "sign_up_link": "Sign up"
   },
   "BaseTemplate": {
-    "description": "Starter code for your Nextjs Boilerplate with Tailwind CSS",
-    "made_with": "Made with <author></author>."
+    "description": "Neurora - AI-powered creation platform for creators",
+    "made_with": "Crafted with <author></author>."
   },
   "Index": {
-    "meta_title": "Next.js Boilerplate Presentation",
-    "meta_description": "Next js Boilerplate is the perfect starter code for your project. Build your React application with the Next.js framework.",
-    "sponsors_title": "Sponsors"
+    "meta_title": "Neurora - AI Creation Platform for Content Creators",
+    "meta_description": "Neurora is built for creators. An AI-powered intelligent creation platform designed specifically for knowledge bloggers and content creators.",
+    "sponsors_title": "Partners"
   },
   "Counter": {
     "meta_title": "Counter",
@@ -33,8 +42,8 @@
   },
   "About": {
     "meta_title": "About",
-    "meta_description": "About page description",
-    "about_paragraph": "Welcome to our About page! We are a team of passionate individuals dedicated to creating amazing software.",
+    "meta_description": "Learn about Neurora team and our mission",
+    "about_paragraph": "Welcome to Neurora! We are a passionate team dedicated to building the most advanced AI-powered creation platform for creators.",
     "translation_powered_by": "Translation powered by"
   },
   "Portfolio": {
@@ -68,9 +77,143 @@
   "UserProfile": {
     "meta_title": "User Profile"
   },
+  "Footer": {
+    "company_title": "Company",
+    "product_title": "Product",
+    "support_title": "Support", 
+    "newsletter_title": "Newsletter",
+    "newsletter_description": "Get the latest product updates and insights.",
+    "email_placeholder": "Enter your email",
+    "subscribe_button": "Subscribe",
+    "rights_reserved": "All rights reserved.",
+    "links": {
+      "company": {
+        "about": "About Us",
+        "careers": "Careers",
+        "press": "Press",
+        "blog": "Blog"
+      },
+      "product": {
+        "platform": "Neurora Platform", 
+        "pricing": "Pricing",
+        "api_docs": "API Documentation",
+        "help_docs": "Help Center"
+      },
+      "support": {
+        "help_center": "Help Center",
+        "contact": "Contact Us",
+        "status": "Status",
+        "privacy": "Privacy Policy"
+      },
+      "legal": {
+        "terms": "Terms of Service",
+        "privacy": "Privacy Policy", 
+        "cookies": "Cookie Policy"
+      }
+    }
+  },
   "DashboardLayout": {
     "dashboard_link": "Dashboard",
     "user_profile_link": "Manage your account",
     "sign_out": "Sign out"
+  },
+  "HomePage": {
+    "hero_title": "Neurora - Built for Creators",
+    "hero_description": "An AI-powered intelligent creation platform designed specifically for knowledge bloggers and content creators to maximize the value of thinkers.",
+    "get_started": "Get Started",
+    "view_docs": "View Documentation",
+    "hero_card_title": "AI Creation Platform",
+    "hero_card_subtitle": "Smart • Efficient • Professional",
+    "features_title": "Tailored for Content Creators",
+    "features_description": "Integrated with advanced AI technology, providing a complete creation toolkit to help content creators maximize their value.",
+    "cta_title": "Ready to Start Creating?",
+    "cta_description": "Join thousands of creators using Neurora to craft professional content and unlock your creative potential.",
+    "cta_start": "Get Started",
+    "cta_github": "Learn More",
+    "features": {
+      "nextjs": {
+        "title": "AI-Powered Creation Engine",
+        "description": "Advanced artificial intelligence that understands your content needs, generating high-quality drafts, suggestions, and optimizations tailored to your unique voice and style."
+      },
+      "design": {
+        "title": "Professional Content Studio",
+        "description": "Complete content creation toolkit with modern editing interface, collaborative features, and professional templates designed for knowledge creators."
+      },
+      "security": {
+        "title": "Enterprise-Grade Security",
+        "description": "Built-in security with encrypted data storage, secure collaboration, and privacy-first approach to protect your intellectual property and content."
+      },
+      "performance": {
+        "title": "Lightning-Fast Performance",
+        "description": "Optimized for speed and efficiency with real-time collaboration, instant previews, and seamless publishing across multiple platforms."
+      },
+      "i18n": {
+        "title": "Global Publishing Ready",
+        "description": "Multi-language support with automated translation capabilities and localization tools to reach global audiences effortlessly."
+      },
+      "testing": {
+        "title": "Quality Assurance",
+        "description": "Built-in content validation, plagiarism detection, SEO optimization, and analytics to ensure your content meets the highest standards."
+      }
+    },
+    "use_cases_title": "Perfect for Every Creator",
+    "use_cases_description": "Whether you're an individual blogger or an enterprise content team, Neurora scales with your creative ambitions.",
+    "tabs": {
+      "individual": {
+        "label": "Individual",
+        "title": "Personal Knowledge Sharing",
+        "description": "Designed for individual knowledge bloggers with content creation tools, SEO optimization, and audience engagement features to build your personal brand."
+      },
+      "team": {
+        "label": "Team",
+        "title": "Collaborative Content Creation",
+        "description": "Multi-user collaboration with version control and content review workflows, perfect for content teams working together efficiently."
+      },
+      "enterprise": {
+        "label": "Enterprise",
+        "title": "Enterprise Content Marketing",
+        "description": "Enterprise-grade security and management features with brand consistency controls, multi-channel publishing, and advanced analytics."
+      },
+      "education": {
+        "label": "Education",
+        "title": "Educational Content",
+        "description": "Specially designed for educators with course content creation, learning path design, and student interaction capabilities."
+      }
+    }
+  },
+  "DemoBanner": {
+    "demo_text": "Next.js Template Demo - Developed by Neurora Team",
+    "try_auth": "Try Authentication"
+  },
+  "notifications": {
+    "close": "Close",
+    "success_title": "Success",
+    "error_title": "Error",
+    "warning_title": "Warning", 
+    "info_title": "Information",
+    "save_success": "Saved successfully",
+    "save_error": "Failed to save",
+    "delete_success": "Deleted successfully",
+    "delete_error": "Failed to delete",
+    "update_success": "Updated successfully", 
+    "update_error": "Failed to update",
+    "create_success": "Created successfully",
+    "create_error": "Failed to create",
+    "network_error": "Network connection failed",
+    "server_error": "Server error occurred",
+    "validation_error": "Please check your input",
+    "permission_error": "You don't have permission to perform this action",
+    "file_upload_success": "File uploaded successfully",
+    "file_upload_error": "File upload failed",
+    "copy_success": "Copied to clipboard",
+    "copy_error": "Failed to copy",
+    "loading": "Loading...",
+    "please_wait": "Please wait",
+    "operation_completed": "Operation completed",
+    "changes_saved": "Changes saved",
+    "no_changes": "No changes to save",
+    "confirm_delete": "Confirm deletion?",
+    "confirm_action": "Confirm this action?",
+    "action_cannot_be_undone": "This action cannot be undone"
   }
 }

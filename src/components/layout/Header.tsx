@@ -2,20 +2,23 @@
 
 import Link from 'next/link';
 import React, { useState } from 'react';
+import { useTranslations } from 'next-intl';
 import { cn } from '@/utils/Helpers';
 import { Button } from '../ui/Button';
 import { Container } from './Container';
 import { NeuroraIcon } from '../ui/NeuroraIcon';
+import { LocaleSwitcher } from '../LocaleSwitcher';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const t = useTranslations('Header');
 
   const navigation = [
-    { name: '特性', href: '/features' },
-    { name: '案例', href: '/cases' },
-    { name: '社区', href: '/community' },
-    { name: '定价', href: '/pricing' },
-    { name: '博客', href: '/blog' },
+    { name: t('features'), href: '/features' },
+    { name: t('cases'), href: '/cases' },
+    { name: t('community'), href: '/community' },
+    { name: t('pricing'), href: '/pricing' },
+    { name: t('blog'), href: '/blog' },
   ];
 
   return (
@@ -41,15 +44,18 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
+            <div className="pl-4 border-l border-border-default/20">
+              <LocaleSwitcher />
+            </div>
           </nav>
 
           {/* Desktop Actions */}
           <div className="hidden lg:flex items-center space-x-4">
             <Button variant="secondary" size="md">
-              登录
+              {t('login')}
             </Button>
             <Button variant="primary" size="md">
-              立即体验
+              {t('try_now')}
             </Button>
           </div>
 
@@ -95,6 +101,9 @@ const Header = () => {
           )}
         >
           <nav className="flex flex-col space-y-4">
+            <div className="flex justify-end py-2">
+              <LocaleSwitcher />
+            </div>
             {navigation.map(item => (
               <Link
                 key={item.name}
@@ -107,10 +116,10 @@ const Header = () => {
             ))}
             <div className="flex flex-col space-y-3 pt-4 border-t border-border-default/20">
               <Button variant="secondary" size="md" className="w-full">
-                登录
+                {t('login')}
               </Button>
               <Button variant="primary" size="md" className="w-full">
-                立即体验
+                {t('try_now')}
               </Button>
             </div>
           </nav>

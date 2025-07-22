@@ -24,37 +24,39 @@ export async function generateMetadata(props: IIndexProps) {
 export default async function Index(props: IIndexProps) {
   const { locale } = await props.params;
   setRequestLocale(locale);
+  
+  const t = await getTranslations('HomePage');
 
   const features = [
     {
       icon: '🚀',
-      title: 'Next.js 15 + App Router',
-      description: '基于最新的 Next.js 15 和 App Router，支持 React 19 并配置了 TypeScript，提供卓越的开发体验。',
+      title: t('features.nextjs.title'),
+      description: t('features.nextjs.description'),
     },
     {
       icon: '🎨',
-      title: '现代设计系统',
-      description: '完整的设计令牌系统和组件库，遵循现代 UI/UX 设计原则，支持 Tailwind CSS v4。',
+      title: t('features.design.title'),
+      description: t('features.design.description'),
     },
     {
       icon: '🔒',
-      title: '企业级安全认证',
-      description: '集成 Clerk 认证系统，支持多因素认证、社交登录等企业级安全特性。',
+      title: t('features.security.title'),
+      description: t('features.security.description'),
     },
     {
       icon: '⚡',
-      title: '性能优先',
-      description: '使用现代构建工具优化，支持 Turbopack、代码分割和性能监控，确保极致体验。',
+      title: t('features.performance.title'),
+      description: t('features.performance.description'),
     },
     {
       icon: '🌐',
-      title: '国际化就绪',
-      description: '内置 next-intl 国际化支持，配合 Crowdin 实现专业的多语言工作流。',
+      title: t('features.i18n.title'),
+      description: t('features.i18n.description'),
     },
     {
       icon: '🧪',
-      title: '质量保证',
-      description: '完整的测试套件，包含 Vitest、React Testing Library 和 Playwright 端到端测试。',
+      title: t('features.testing.title'),
+      description: t('features.testing.description'),
     },
   ];
 
@@ -66,17 +68,17 @@ export default async function Index(props: IIndexProps) {
           <div className="u-grid-desktop gap-8 lg:gap-16 items-center">
             <div className="lg:col-span-6">
               <h1 className="u-display-xl mb-6">
-                下一代 Next.js 开发模板
+                {t('hero_title')}
               </h1>
               <p className="u-paragraph-l mb-8 text-text-faded">
-                由 Neurora 团队精心打造的现代化 Next.js 模板，集成最佳实践、完整工具链和企业级特性，助力开发者快速构建生产就绪的应用程序。
+                {t('hero_description')}
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button variant="primary" size="lg">
-                  开始使用
+                  {t('get_started')}
                 </Button>
                 <Button variant="secondary" size="lg">
-                  查看文档
+                  {t('view_docs')}
                 </Button>
               </div>
             </div>
@@ -86,8 +88,8 @@ export default async function Index(props: IIndexProps) {
                   <div className="h-full flex items-center justify-center">
                     <div className="text-center">
                       <div className="text-6xl mb-4">⚡</div>
-                      <p className="text-xl font-medium">Next.js 15 模板</p>
-                      <p className="text-sm mt-2 opacity-90">现代化 • 类型安全 • 生产就绪</p>
+                      <p className="text-xl font-medium">{t('hero_card_title')}</p>
+                      <p className="text-sm mt-2 opacity-90">{t('hero_card_subtitle')}</p>
                     </div>
                   </div>
                 </div>
@@ -101,9 +103,9 @@ export default async function Index(props: IIndexProps) {
       <section className="w-full py-16 lg:py-24 u-bg-ivory-medium">
         <Container>
           <div className="text-center mb-16">
-            <h2 className="u-display-m mb-4">构建现代应用所需的一切</h2>
+            <h2 className="u-display-m mb-4">{t('features_title')}</h2>
             <p className="u-paragraph-l text-text-faded max-w-3xl mx-auto">
-              我们的模板包含了快速交付生产就绪应用程序所需的所有工具和最佳实践。
+              {t('features_description')}
             </p>
           </div>
 
@@ -135,52 +137,52 @@ export default async function Index(props: IIndexProps) {
       <section className="w-full py-16 lg:py-24">
         <Container>
           <div className="text-center mb-12">
-            <h2 className="u-display-m mb-4">适合各种项目类型</h2>
+            <h2 className="u-display-m mb-4">{t('use_cases_title')}</h2>
             <p className="u-paragraph-l text-text-faded">
-              无论您是构建创业公司 MVP 还是企业级应用，我们的模板都能与您一起扩展。
+              {t('use_cases_description')}
             </p>
           </div>
 
-          <Tabs defaultValue="startup" className="max-w-4xl mx-auto">
+          <Tabs defaultValue="individual" className="max-w-4xl mx-auto">
             <TabsList className="grid w-full grid-cols-4">
-              <TabsTrigger value="startup">创业公司</TabsTrigger>
-              <TabsTrigger value="enterprise">企业应用</TabsTrigger>
-              <TabsTrigger value="saas">SaaS 产品</TabsTrigger>
-              <TabsTrigger value="ecommerce">电商平台</TabsTrigger>
+              <TabsTrigger value="individual">{t('tabs.individual.label')}</TabsTrigger>
+              <TabsTrigger value="team">{t('tabs.team.label')}</TabsTrigger>
+              <TabsTrigger value="enterprise">{t('tabs.enterprise.label')}</TabsTrigger>
+              <TabsTrigger value="education">{t('tabs.education.label')}</TabsTrigger>
             </TabsList>
 
-            <TabsContent value="startup" className="mt-8">
+            <TabsContent value="individual" className="mt-8">
               <div className="text-center space-y-4">
-                <h3 className="u-display-s">快速 MVP 开发</h3>
+                <h3 className="u-display-s">{t('tabs.individual.title')}</h3>
                 <p className="u-paragraph-m text-text-faded">
-                  完整的认证系统、数据库集成和 CI/CD 配置，让您专注于核心业务逻辑，快速验证产品想法。
+                  {t('tabs.individual.description')}
+                </p>
+              </div>
+            </TabsContent>
+
+            <TabsContent value="team" className="mt-8">
+              <div className="text-center space-y-4">
+                <h3 className="u-display-s">{t('tabs.team.title')}</h3>
+                <p className="u-paragraph-m text-text-faded">
+                  {t('tabs.team.description')}
                 </p>
               </div>
             </TabsContent>
 
             <TabsContent value="enterprise" className="mt-8">
               <div className="text-center space-y-4">
-                <h3 className="u-display-s">企业级应用</h3>
+                <h3 className="u-display-s">{t('tabs.enterprise.title')}</h3>
                 <p className="u-paragraph-m text-text-faded">
-                  内置安全最佳实践、监控、日志记录和性能优化，满足企业级应用的严格要求。
+                  {t('tabs.enterprise.description')}
                 </p>
               </div>
             </TabsContent>
 
-            <TabsContent value="saas" className="mt-8">
+            <TabsContent value="education" className="mt-8">
               <div className="text-center space-y-4">
-                <h3 className="u-display-s">SaaS 平台</h3>
+                <h3 className="u-display-s">{t('tabs.education.title')}</h3>
                 <p className="u-paragraph-m text-text-faded">
-                  多租户架构、订阅管理、用户权限控制和国际化支持，构建可扩展的 SaaS 产品。
-                </p>
-              </div>
-            </TabsContent>
-
-            <TabsContent value="ecommerce" className="mt-8">
-              <div className="text-center space-y-4">
-                <h3 className="u-display-s">电商应用</h3>
-                <p className="u-paragraph-m text-text-faded">
-                  高性能产品展示、购物车、支付集成和订单管理，打造现代化的电商体验。
+                  {t('tabs.education.description')}
                 </p>
               </div>
             </TabsContent>
@@ -192,16 +194,16 @@ export default async function Index(props: IIndexProps) {
       <section className="w-full py-16 lg:py-24 u-theme-dark">
         <Container>
           <div className="text-center">
-            <h2 className="u-display-m text-white mb-6">准备开始了吗？</h2>
+            <h2 className="u-display-m text-white mb-6">{t('cta_title')}</h2>
             <p className="u-paragraph-l text-gray-300 mb-8 max-w-2xl mx-auto">
-              加入数千名使用我们现代化模板构建下一代应用程序的开发者行列。
+              {t('cta_description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="primary" size="lg">
-                立即开始
+                {t('cta_start')}
               </Button>
               <Button variant="secondary" size="lg" className="bg-transparent border-white text-white hover:bg-white hover:text-background-dark">
-                在 GitHub 查看
+                {t('cta_github')}
               </Button>
             </div>
           </div>

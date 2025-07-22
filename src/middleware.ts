@@ -6,6 +6,7 @@ import { NextResponse } from 'next/server';
 import arcjet from '@/libs/Arcjet';
 import { routing } from './libs/I18nRouting';
 
+// Use next-intl middleware with our routing configuration
 const handleI18nRouting = createMiddleware(routing);
 
 const isProtectedRoute = createRouteMatcher([

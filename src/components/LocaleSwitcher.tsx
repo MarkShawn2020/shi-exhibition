@@ -1,33 +1,49 @@
 'use client';
 
-import type { ChangeEventHandler } from 'react';
 import { useLocale } from 'next-intl';
-import { useRouter } from 'next/navigation';
-import { usePathname } from '@/libs/I18nNavigation';
-import { routing } from '@/libs/I18nRouting';
+import { useRouter, usePathname } from '@/libs/I18nNavigation';
 
 export const LocaleSwitcher = () => {
   const router = useRouter();
   const pathname = usePathname();
   const locale = useLocale();
 
-  const handleChange: ChangeEventHandler<HTMLSelectElement> = (event) => {
-    router.push(`/${event.target.value}${pathname}`);
-    router.refresh(); // Ensure the page takes the new locale into account related to the issue #395
+  const handleLocaleChange = (newLocale: string) => {
+    // Use next-intl's router which handles locale switching correctly
+    router.push(pathname, { locale: newLocale });
   };
 
+  // Clean, professional locale display
+  const localeNames = {
+    zh: '中',
+    en: 'EN',
+  } as const;
+
+  const otherLocale = locale === 'zh' ? 'en' : 'zh';
+
   return (
-    <select
-      defaultValue={locale}
-      onChange={handleChange}
-      className="border border-gray-300 font-medium focus:outline-hidden focus-visible:ring-3"
-      aria-label="lang-switcher"
-    >
-      {routing.locales.map(elt => (
-        <option key={elt} value={elt}>
-          {elt.toUpperCase()}
-        </option>
-      ))}
-    </select>
+    <div className="flex items-center text-sm">
+      <span className="text-text-main font-medium">
+        {localeNames[locale as keyof typeof localeNames]}
+      </span>
+      <span className="mx-2 text-text-faded">/</span>
+      <button
+        type="button"
+        onClick={() => handleLocaleChange(otherLocale)}
+        className="text-text-faded hover:text-text-main transition-colors font-medium focus:outline-none focus:ring-2 focus:ring-primary/20 rounded px-1"
+        aria-label={
+          locale === 'zh' 
+            ? `Switch to English` 
+            : `切换到中文`
+        }
+        title={
+          locale === 'zh'
+            ? 'Switch to English'
+            : '切换到中文'
+        }
+      >
+        {localeNames[otherLocale as keyof typeof localeNames]}
+      </button>
+    </div>
   );
 };
