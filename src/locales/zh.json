@@ -35,7 +35,9 @@
     "presentation": "计数器存储在数据库中，将根据您提供的值进行递增。",
     "label_increment": "递增值",
     "button_increment": "递增",
-    "error_increment_range": "数值必须在 1 到 3 之间"
+    "error_increment_range": "数值必须在 1 到 3 之间",
+    "loading_submit": "更新中...",
+    "submitting": "正在提交..."
   },
   "CurrentCount": {
     "count": "计数: {count}"
@@ -215,5 +217,19 @@
     "confirm_delete": "确认删除？",
     "confirm_action": "确认执行此操作？",
     "action_cannot_be_undone": "此操作无法撤销"
+  },
+  "button_states": {
+    "loading": "加载中...",
+    "submitting": "提交中...",
+    "saving": "保存中...",
+    "deleting": "删除中...",
+    "updating": "更新中...",
+    "processing": "处理中...",
+    "disabled_loading": "操作进行中，请稍候...",
+    "disabled_permission": "您没有执行此操作的权限",
+    "disabled_form_invalid": "请填写完整的表单信息",
+    "disabled_other_loading": "其他操作进行中，请稍候...",
+    "success": "操作成功",
+    "error": "操作失败"
   }
 }

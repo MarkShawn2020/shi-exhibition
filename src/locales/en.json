@@ -35,7 +35,9 @@
     "presentation": "The counter is stored in the database and incremented by the value you provide.",
     "label_increment": "Increment by",
     "button_increment": "Increment",
-    "error_increment_range": "Value must be between 1 and 3"
+    "error_increment_range": "Value must be between 1 and 3",
+    "loading_submit": "Updating...",
+    "submitting": "Submitting..."
   },
   "CurrentCount": {
     "count": "Count: {count}"
@@ -215,5 +217,19 @@
     "confirm_delete": "Confirm deletion?",
     "confirm_action": "Confirm this action?",
     "action_cannot_be_undone": "This action cannot be undone"
+  },
+  "button_states": {
+    "loading": "Loading...",
+    "submitting": "Submitting...",
+    "saving": "Saving...",
+    "deleting": "Deleting...",
+    "updating": "Updating...",
+    "processing": "Processing...",
+    "disabled_loading": "Operation in progress, please wait...",
+    "disabled_permission": "You don't have permission to perform this action",
+    "disabled_form_invalid": "Please fill in all required form fields",
+    "disabled_other_loading": "Another operation is in progress, please wait...",
+    "success": "Operation successful",
+    "error": "Operation failed"
   }
 }
