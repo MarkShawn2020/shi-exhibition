@@ -1,4 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 80" fill="#DA1C2E" >
+    <rect width="520" height="80" fill="transparent"/>
+
     <g transform="translate(0, 0)">
         <!-- Neurora Tech Logo -->
         <g transform="scale(0.075) translate(100, -100)">
@@ -20,6 +22,7 @@
                             font-family="Helvetica, sans-serif"
                             font-size="80"
                             font-weight="bold"
+                            fill="white"
                     >
                         NEURORA
                     </text>
