@@ -231,5 +231,149 @@
     "disabled_other_loading": "其他操作进行中，请稍候...",
     "success": "操作成功",
     "error": "操作失败"
+  },
+  "Legal": {
+    "effective_date": "生效日期",
+    "last_updated": "最后更新",
+    "contact_us": "联系我们",
+    "back_to_top": "返回顶部",
+    "table_of_contents": "目录"
+  },
+  "TermsOfService": {
+    "meta_title": "服务条款",
+    "meta_description": "Neurora AI 智能创作平台服务条款",
+    "title": "服务条款",
+    "sections": {
+      "acceptance": {
+        "title": "1. 条款接受",
+        "content": "通过访问和使用 Neurora，您接受并同意受本协议条款和条件的约束。如果您不同意遵守以上条款，请不要使用本服务。"
+      },
+      "description": {
+        "title": "2. 服务描述",
+        "content": "Neurora 是专为知识博主和内容创作者设计的 AI 智能创作平台。我们的服务提供内容创作、协作和发布工具。"
+      },
+      "user_accounts": {
+        "title": "3. 用户账户和注册",
+        "content": "您必须注册账户才能访问某些功能。您有责任保护您的账户和密码的机密性，并限制对您计算机的访问。"
+      },
+      "user_content": {
+        "title": "4. 用户内容和行为",
+        "content": "您保留使用我们平台创建内容的所有权。您授予我们在服务中使用、修改、公开表演、公开展示、复制和分发此类内容的许可。"
+      },
+      "intellectual_property": {
+        "title": "5. 知识产权",
+        "content": "本服务及其原创内容、功能和特色是且将继续是 Neurora 及其许可方的专有财产。"
+      },
+      "ai_usage": {
+        "title": "6. AI 和数据使用",
+        "content": "我们的 AI 服务可能使用您的内容来改进我们的模型和服务。我们实施适当的保护措施来保护您的知识产权和隐私。"
+      },
+      "termination": {
+        "title": "7. 终止",
+        "content": "我们可以立即终止或暂停您的账户，无需事先通知或承担责任，无论出于何种原因，包括但不限于您违反条款。"
+      },
+      "disclaimers": {
+        "title": "8. 免责声明和限制",
+        "content": "本服务上的信息按"现状"提供。在法律允许的最大范围内，我们排除与我们服务相关的所有陈述、保证和条件。"
+      },
+      "governing_law": {
+        "title": "9. 适用法律",
+        "content": "本条款应受 Neurora 运营所在司法管辖区法律管辖并据此解释。"
+      },
+      "contact": {
+        "title": "10. 联系信息",
+        "content": "如果您对这些条款有任何疑问，请通过 legal@neurora.ai 联系我们。"
+      }
+    }
+  },
+  "PrivacyPolicy": {
+    "meta_title": "隐私政策",
+    "meta_description": "Neurora AI 智能创作平台隐私政策",
+    "title": "隐私政策",
+    "sections": {
+      "introduction": {
+        "title": "1. 简介",
+        "content": "Neurora 尊重您的隐私，致力于保护您的个人数据。本隐私政策解释了当您使用我们的服务时，我们如何收集、使用和分享您的信息。"
+      },
+      "information_collected": {
+        "title": "2. 我们收集的信息",
+        "content": "我们收集您直接向我们提供的信息、我们在您使用服务时自动获得的信息，以及来自第三方来源的信息。"
+      },
+      "how_we_use": {
+        "title": "3. 我们如何使用信息",
+        "content": "我们使用收集的信息来提供、维护和改进我们的服务，处理交易，发送通信，以及防范欺诈和滥用。"
+      },
+      "information_sharing": {
+        "title": "4. 信息共享和披露",
+        "content": "我们可能在某些有限情况下分享您的信息，包括获得您的同意、遵守法律或保护权利和安全。"
+      },
+      "data_retention": {
+        "title": "5. 数据保留",
+        "content": "我们保留个人信息的时间为提供服务、遵守法律义务、解决争议和执行协议所必需的时间。"
+      },
+      "security": {
+        "title": "6. 安全措施",
+        "content": "我们实施适当的技术和组织措施，保护您的个人信息免受未经授权的访问、更改、披露或销毁。"
+      },
+      "ai_processing": {
+        "title": "7. AI 和机器学习",
+        "content": "我们的 AI 服务处理您的内容以提供智能创作协助。我们在 AI 处理过程中实施隐私保护技术来保护您的数据。"
+      },
+      "third_party": {
+        "title": "8. 第三方服务",
+        "content": "我们的服务集成了用于身份验证、数据存储和分析的第三方服务。这些服务有自己的隐私政策。"
+      },
+      "your_rights": {
+        "title": "9. 您的权利和选择",
+        "content": "根据您所在的位置，您可能对您的个人信息拥有某些权利，包括访问、更新、删除或限制处理的权利。"
+      },
+      "international_transfers": {
+        "title": "10. 国际数据传输",
+        "content": "您的信息可能会被传输到您所在国家以外的国家并在那里处理。我们确保为此类传输提供适当的保护措施。"
+      },
+      "changes": {
+        "title": "11. 隐私政策变更",
+        "content": "我们可能会不时更新本隐私政策。我们将通过在网站上发布新政策来通知您任何重大变更。"
+      },
+      "contact": {
+        "title": "12. 联系信息",
+        "content": "如果您对本隐私政策有任何疑问，请通过 privacy@neurora.ai 联系我们。"
+      }
+    }
+  },
+  "CookiePolicy": {
+    "meta_title": "Cookie 政策",
+    "meta_description": "Neurora AI 智能创作平台 Cookie 政策",
+    "title": "Cookie 政策",
+    "sections": {
+      "what_are_cookies": {
+        "title": "1. 什么是 Cookie",
+        "content": "Cookie 是当您访问我们的网站时存储在您的计算机或移动设备上的小文本文件。它们通过记住您的偏好来帮助我们为您提供更好的体验。"
+      },
+      "types_of_cookies": {
+        "title": "2. 我们使用的 Cookie 类型",
+        "content": "我们使用基本功能必需的 Cookie、用于分析使用情况的性能 Cookie，以及用于记住您设置的偏好 Cookie。"
+      },
+      "third_party_cookies": {
+        "title": "3. 第三方 Cookie",
+        "content": "我们使用第三方服务进行分析、身份验证和其他功能。这些服务可能在您的设备上设置自己的 Cookie。"
+      },
+      "cookie_consent": {
+        "title": "4. Cookie 同意管理",
+        "content": "您可以通过我们的 Cookie 同意横幅和设置管理您的 Cookie 偏好。您可以接受或拒绝非必需的 Cookie。"
+      },
+      "control_cookies": {
+        "title": "5. 如何控制 Cookie",
+        "content": "您可以通过浏览器设置控制和删除 Cookie。请注意，禁用 Cookie 可能会影响我们服务的功能。"
+      },
+      "updates": {
+        "title": "6. Cookie 政策更新",
+        "content": "我们可能会不时更新本 Cookie 政策。任何变更都将在此页面上发布，并更新生效日期。"
+      },
+      "contact": {
+        "title": "7. 联系信息",
+        "content": "如果您对我们使用 Cookie 有任何疑问，请通过 privacy@neurora.ai 联系我们。"
+      }
+    }
   }
 }
