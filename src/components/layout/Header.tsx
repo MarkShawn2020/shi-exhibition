@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import { cn } from '@/utils/Helpers';
 import { Button } from '../ui/Button';
 import { Container } from './Container';
-import { NeuroraLogo } from '../ui/NeuroraLogo';
+import { NeuroraIcon } from '../ui/NeuroraIcon';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,8 +23,9 @@ const Header = () => {
         <div className="flex items-center justify-between py-4 lg:py-6">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="/" className="flex items-center no-underline" style={{ color: 'var(--color-primary, #d97757)' }}>
-              <NeuroraLogo />
+            <Link href="/" className="flex items-center space-x-2 no-underline" style={{ color: 'var(--color-primary, #d97757)' }}>
+              <NeuroraIcon className="h-8 w-8" />
+              <span className="text-xl font-bold">Neurora</span>
             </Link>
           </div>
 

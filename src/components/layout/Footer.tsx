@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import { Container } from './Container';
+import { NeuroraIcon } from '../ui/NeuroraIcon';
 
 const Footer = () => {
   const footerLinks = {
@@ -31,12 +32,9 @@ const Footer = () => {
           <div className="u-grid-desktop gap-8 lg:gap-16">
             {/* Logo and Description */}
             <div className="lg:col-span-4">
-              <Link href="/" className="flex items-center no-underline mb-4">
-                <img 
-                  src="/assets/images/neurora-logo-white.png" 
-                  alt="Neurora" 
-                  className="h-10 w-auto"
-                />
+              <Link href="/" className="flex items-center space-x-2 no-underline mb-4" style={{ color: 'white' }}>
+                <NeuroraIcon className="h-10 w-10" />
+                <span className="text-2xl font-bold">Neurora</span>
               </Link>
               <p className="u-paragraph-m text-gray-300 mb-6">
                 Neurora，为创作者而生。
