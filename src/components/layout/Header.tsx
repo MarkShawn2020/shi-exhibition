@@ -8,6 +8,7 @@ import { Button } from '../ui/Button';
 import { Container } from './Container';
 import { NeuroraIcon } from '../ui/NeuroraIcon';
 import { LocaleSwitcher } from '../LocaleSwitcher';
+import packageJson from '../../../package.json';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,6 +32,9 @@ const Header = () => {
               <NeuroraIcon className="h-8 w-8" />
               <span className="text-xl font-bold">Neurora</span>
             </Link>
+            <span className="ml-2 px-2 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full border border-primary/20">
+              v{packageJson.version}
+            </span>
           </div>
 
           {/* Desktop Navigation */}
