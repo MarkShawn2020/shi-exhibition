@@ -198,7 +198,7 @@ export default async function Index(props: IIndexProps) {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="primary" size="lg">
-                免费开始
+                立即开始
               </Button>
               <Button variant="secondary" size="lg" className="bg-transparent border-white text-white hover:bg-white hover:text-background-dark">
                 在 GitHub 查看

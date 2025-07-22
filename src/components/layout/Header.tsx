@@ -49,7 +49,7 @@ const Header = () => {
               登录
             </Button>
             <Button variant="primary" size="md">
-              免费体验
+              立即体验
             </Button>
           </div>
 
@@ -110,7 +110,7 @@ const Header = () => {
                 登录
               </Button>
               <Button variant="primary" size="md" className="w-full">
-                免费体验
+                立即体验
               </Button>
             </div>
           </nav>
