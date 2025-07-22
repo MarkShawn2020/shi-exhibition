@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { useTranslations } from 'next-intl';
 import { Container } from '../layout/Container';
@@ -99,10 +101,10 @@ export const LegalPage: React.FC<LegalPageProps> = ({
           <p className="text-gray-600 text-sm">
             If you have any questions about this policy, please contact us at{' '}
             <a 
-              href="mailto:legal@neurora.ai" 
+              href="mailto:mark@cs-magic.com" 
               className="text-primary hover:text-primary/80 transition-colors"
             >
-              legal@neurora.ai
+              mark@cs-magic.com
             </a>
           </p>
         </div>
