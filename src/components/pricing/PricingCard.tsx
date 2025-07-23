@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 type BillingCycle = 'monthly' | 'yearly';
 
@@ -17,6 +17,7 @@ export const PricingCard: React.FC<PricingCardProps> = ({
   isRecommended = false,
 }) => {
   const t = useTranslations('Pricing');
+  const locale = useLocale();
 
   const getPriceDisplay = () => {
     if (planKey === 'free') {
@@ -34,7 +35,7 @@ export const PricingCard: React.FC<PricingCardProps> = ({
     if (planKey === 'free' || billingCycle === 'monthly') return null;
     
     const yearlyPrice = t(`plans.${planKey}.price_yearly`);
-    const currency = window.location.pathname.includes('/zh') ? '¥' : '$';
+    const currency = locale === 'zh' ? '¥' : '$';
     const annualTotal = parseInt(yearlyPrice) * 12;
     
     return (
