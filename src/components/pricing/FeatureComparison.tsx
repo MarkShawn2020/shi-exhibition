@@ -76,19 +76,34 @@ export const FeatureComparison: React.FC = () => {
       </div>
 
       <div className="overflow-x-auto">
-        <table className="w-full border-collapse bg-white rounded-lg shadow-sm">
-          {/* Header */}
+        <table className="w-full border-collapse bg-white rounded-lg shadow-sm border border-gray-200">
+          {/* Recommendation Row */}
           <thead>
-            <tr className="border-b border-gray-200">
-              <th className="text-left p-6 font-semibold text-text-main w-1/3">Features</th>
+            <tr>
+              <th className="text-left p-4 w-1/3"></th>
               {plans.map((plan) => (
-                <th key={plan.key} className="text-center p-6 font-semibold text-text-main w-1/6">
-                  {plan.name}
-                  {plan.key === 'essentials' && (
-                    <span className="block text-xs font-normal text-primary bg-primary/10 px-2 py-1 rounded-full mt-1">
+                <th key={plan.key} className={`text-center p-2 w-1/6 ${
+                  plan.key === 'essentials' ? 'bg-primary/5' : ''
+                }`}>
+                  {plan.key === 'essentials' ? (
+                    <div className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-primary text-white">
                       {t('recommended')}
-                    </span>
+                    </div>
+                  ) : (
+                    <div className="h-6"></div>
                   )}
+                </th>
+              ))}
+            </tr>
+            
+            {/* Plan Names Row */}
+            <tr className="border-b border-gray-200">
+              <th className="text-left p-4 font-medium text-gray-700">Features</th>
+              {plans.map((plan) => (
+                <th key={plan.key} className={`text-center p-4 font-semibold text-text-main w-1/6 ${
+                  plan.key === 'essentials' ? 'bg-primary/5' : ''
+                }`}>
+                  {plan.name}
                 </th>
               ))}
             </tr>
