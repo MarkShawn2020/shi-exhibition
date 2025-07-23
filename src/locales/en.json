@@ -375,5 +375,146 @@
         "content": "If you have any questions about our use of cookies, please contact us at mark@cs-magic.com"
       }
     }
+  },
+  "Pricing": {
+    "meta_title": "Pricing - Neurora AI Creation Platform",
+    "meta_description": "Flexible pricing plans for content creators and teams. Start free with 3 projects, upgrade for unlimited AI-powered content creation and collaboration.",
+    "hero_title": "Flexible pricing for everyone",
+    "hero_description": "Choose the perfect plan for your content creation needs. Start free and scale as you grow.",
+    "billing_monthly": "Monthly",
+    "billing_yearly": "Yearly", 
+    "billing_save": "Save 20%",
+    "projects_label": "Projects",
+    "recommended": "Recommended",
+    "get_started": "Get Started",
+    "start_free_trial": "Start 14-day free trial",
+    "contact_sales": "Contact Sales",
+    "plans": {
+      "free": {
+        "name": "Free",
+        "price_monthly": "0",
+        "price_yearly": "0", 
+        "price_label": "Free forever",
+        "description": "Perfect for getting started with AI-powered content creation",
+        "cta": "Let's go",
+        "features": [
+          "Up to 3 projects",
+          "Basic AI writing assistant",
+          "10 content generations per month",
+          "1 user account",
+          "Community support",
+          "Basic templates"
+        ]
+      },
+      "essentials": {
+        "name": "Essentials", 
+        "price_monthly": "15",
+        "price_yearly": "12",
+        "price_label_monthly": "$15/month",
+        "price_label_yearly": "$12/month, billed annually",
+        "description": "Everything you need for professional content creation",
+        "cta": "Start 14-day free trial",
+        "features": [
+          "Unlimited projects",
+          "Advanced AI writing assistant", 
+          "Unlimited content generations",
+          "SEO optimization tools",
+          "Advanced templates library",
+          "Priority email support",
+          "Content analytics",
+          "Export to multiple formats"
+        ]
+      },
+      "team": {
+        "name": "Team",
+        "price_monthly": "29", 
+        "price_yearly": "24",
+        "price_label_monthly": "$29/month",
+        "price_label_yearly": "$24/month, billed annually",
+        "description": "Enhanced collaboration and management features for teams",
+        "cta": "Start 14-day free trial",
+        "features": [
+          "Everything in Essentials",
+          "Unlimited users",
+          "Team collaboration tools",
+          "Content approval workflows",
+          "Advanced analytics & reporting",
+          "Custom branding",
+          "Priority support",
+          "SSO integration (coming soon)"
+        ]
+      }
+    },
+    "enterprise_note": "Need more than 50 users? Contact us for enterprise pricing.",
+    "features_title": "Connect your favorite platforms",
+    "features_description": "Publish and manage your content across all major platforms",
+    "supported_platforms": [
+      {"name": "WordPress", "description": "Blog publishing"},
+      {"name": "Medium", "description": "Article publishing"},
+      {"name": "LinkedIn", "description": "Professional content"},
+      {"name": "Twitter/X", "description": "Social media posts"},
+      {"name": "Facebook", "description": "Social media marketing"},
+      {"name": "Instagram", "description": "Visual content"},
+      {"name": "YouTube", "description": "Video descriptions"},
+      {"name": "TikTok", "description": "Short-form content"}
+    ],
+    "testimonial": {
+      "quote": "Neurora has transformed how we create content. The AI assistance is incredibly intuitive and helps us maintain consistency across all our channels.",
+      "author": "Sarah Chen",
+      "company": "Digital Marketing Agency",
+      "avatar": "/avatars/sarah-chen.jpg"
+    },
+    "comparison_title": "Compare all features",
+    "comparison_categories": {
+      "content_creation": "Content Creation",
+      "ai_features": "AI Features", 
+      "collaboration": "Collaboration",
+      "analytics": "Analytics",
+      "integrations": "Integrations",
+      "support": "Support"
+    },
+    "comparison_features": {
+      "projects": "Projects",
+      "ai_generations": "AI Content Generations", 
+      "templates": "Templates",
+      "seo_tools": "SEO Tools",
+      "content_analytics": "Content Analytics",
+      "export_formats": "Export Formats",
+      "users": "Users",
+      "collaboration": "Team Collaboration",
+      "approval_workflows": "Approval Workflows",
+      "custom_branding": "Custom Branding",
+      "integrations": "Platform Integrations",
+      "api_access": "API Access", 
+      "support": "Support Level",
+      "sso": "SSO Integration"
+    },
+    "faq_title": "Frequently Asked Questions",
+    "faq": [
+      {
+        "question": "What platforms does Neurora support?",
+        "answer": "Neurora supports content creation for all major platforms including WordPress, Medium, LinkedIn, Twitter/X, Facebook, Instagram, YouTube, and TikTok. We're constantly adding support for new platforms."
+      },
+      {
+        "question": "Can I change my plan at any time?",
+        "answer": "Yes! You can upgrade or downgrade your plan at any time. Changes take effect immediately, and we'll prorate your billing accordingly."
+      },
+      {
+        "question": "Is there a free trial?", 
+        "answer": "Yes, we offer a 14-day free trial for both Essentials and Team plans. No credit card required to start your trial."
+      },
+      {
+        "question": "Do you offer discounts for nonprofits or education?",
+        "answer": "Yes! We offer special pricing for qualified nonprofit organizations and educational institutions. Contact us at mark@cs-magic.com for more information."
+      },
+      {
+        "question": "What payment methods do you accept?",
+        "answer": "We accept all major credit cards (Visa, MasterCard, American Express) and PayPal. For enterprise plans, we also accept bank transfers and purchase orders."
+      },
+      {
+        "question": "Is my data secure?",
+        "answer": "Absolutely. We use enterprise-grade security measures including encryption at rest and in transit, regular security audits, and comply with GDPR and other privacy regulations."
+      }
+    ]
   }
 }

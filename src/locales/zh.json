@@ -375,5 +375,146 @@
         "content": "如果您对我们使用 Cookie 有任何疑问，请通过 mark@cs-magic.com 联系我们。"
       }
     }
+  },
+  "Pricing": {
+    "meta_title": "定价 - Neurora AI 智能创作平台",
+    "meta_description": "灵活的定价方案，满足内容创作者和团队需求。免费开始，支持 3 个项目，升级享受无限 AI 创作和协作功能。",
+    "hero_title": "灵活定价，适合所有人",
+    "hero_description": "选择最适合您内容创作需求的方案。免费开始，随着业务增长而扩展。",
+    "billing_monthly": "按月付费",
+    "billing_yearly": "按年付费",
+    "billing_save": "节省 20%",
+    "projects_label": "项目数量",
+    "recommended": "推荐",
+    "get_started": "开始使用",
+    "start_free_trial": "开始 14 天免费试用",
+    "contact_sales": "联系销售",
+    "plans": {
+      "free": {
+        "name": "免费版",
+        "price_monthly": "0",
+        "price_yearly": "0",
+        "price_label": "永久免费",
+        "description": "开始体验 AI 智能内容创作的完美选择",
+        "cta": "立即开始",
+        "features": [
+          "最多 3 个项目",
+          "基础 AI 写作助手",
+          "每月 10 次内容生成",
+          "1 个用户账户",
+          "社区支持",
+          "基础模板库"
+        ]
+      },
+      "essentials": {
+        "name": "基础版",
+        "price_monthly": "99",
+        "price_yearly": "79",
+        "price_label_monthly": "¥99/月",
+        "price_label_yearly": "¥79/月，按年计费",
+        "description": "专业内容创作所需的全部功能",
+        "cta": "开始 14 天免费试用",
+        "features": [
+          "无限项目",
+          "高级 AI 写作助手",
+          "无限内容生成",
+          "SEO 优化工具",
+          "高级模板库",
+          "优先邮件支持",
+          "内容分析",
+          "多格式导出"
+        ]
+      },
+      "team": {
+        "name": "团队版",
+        "price_monthly": "199",
+        "price_yearly": "159",
+        "price_label_monthly": "¥199/月",
+        "price_label_yearly": "¥159/月，按年计费",
+        "description": "团队协作和管理的增强功能",
+        "cta": "开始 14 天免费试用",
+        "features": [
+          "包含基础版所有功能",
+          "无限用户",
+          "团队协作工具",
+          "内容审批流程",
+          "高级分析和报告",
+          "自定义品牌",
+          "优先支持",
+          "SSO 集成（即将推出）"
+        ]
+      }
+    },
+    "enterprise_note": "需要超过 50 个用户？联系我们获取企业级定价。",
+    "features_title": "连接您喜爱的平台",
+    "features_description": "在所有主流平台上发布和管理您的内容",
+    "supported_platforms": [
+      {"name": "微信公众号", "description": "公众号文章发布"},
+      {"name": "知乎", "description": "专业问答内容"},
+      {"name": "小红书", "description": "生活方式内容"},
+      {"name": "抖音", "description": "短视频内容"},
+      {"name": "微博", "description": "社交媒体营销"},
+      {"name": "B站", "description": "视频描述和评论"},
+      {"name": "WordPress", "description": "博客发布"},
+      {"name": "Medium", "description": "文章发布"}
+    ],
+    "testimonial": {
+      "quote": "Neurora 彻底改变了我们的内容创作方式。AI 助手非常直观，帮助我们在所有渠道保持内容的一致性。",
+      "author": "张小明",
+      "company": "数字营销机构",
+      "avatar": "/avatars/zhang-xiaoming.jpg"
+    },
+    "comparison_title": "对比所有功能",
+    "comparison_categories": {
+      "content_creation": "内容创作",
+      "ai_features": "AI 功能",
+      "collaboration": "协作",
+      "analytics": "分析",
+      "integrations": "集成",
+      "support": "支持"
+    },
+    "comparison_features": {
+      "projects": "项目数量",
+      "ai_generations": "AI 内容生成",
+      "templates": "模板",
+      "seo_tools": "SEO 工具",
+      "content_analytics": "内容分析",
+      "export_formats": "导出格式",
+      "users": "用户数",
+      "collaboration": "团队协作",
+      "approval_workflows": "审批流程",
+      "custom_branding": "自定义品牌",
+      "integrations": "平台集成",
+      "api_access": "API 访问",
+      "support": "支持级别",
+      "sso": "SSO 集成"
+    },
+    "faq_title": "常见问题",
+    "faq": [
+      {
+        "question": "Neurora 支持哪些平台？",
+        "answer": "Neurora 支持所有主流平台的内容创作，包括微信公众号、知乎、小红书、抖音、微博、B站、WordPress、Medium 等。我们持续添加对新平台的支持。"
+      },
+      {
+        "question": "我可以随时更改套餐吗？",
+        "answer": "可以！您可以随时升级或降级套餐。更改立即生效，我们会按比例调整您的计费。"
+      },
+      {
+        "question": "有免费试用吗？",
+        "answer": "有的！我们为基础版和团队版提供 14 天免费试用。开始试用无需信用卡。"
+      },
+      {
+        "question": "为非营利组织或教育机构提供折扣吗？",
+        "answer": "是的！我们为符合条件的非营利组织和教育机构提供特殊定价。请联系 mark@cs-magic.com 了解更多信息。"
+      },
+      {
+        "question": "接受哪些付款方式？",
+        "answer": "我们接受所有主要信用卡（Visa、MasterCard、American Express）、支付宝和微信支付。对于企业套餐，我们也接受银行转账和采购订单。"
+      },
+      {
+        "question": "我的数据安全吗？",
+        "answer": "绝对安全。我们采用企业级安全措施，包括静态和传输加密、定期安全审计，并遵守 GDPR 等隐私法规。"
+      }
+    ]
   }
 }
