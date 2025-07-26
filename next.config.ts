@@ -11,6 +11,9 @@ const baseConfig: NextConfig = {
   },
   poweredByHeader: false,
   reactStrictMode: true,
+  experimental: {
+    turbo: false,
+  },
 };
 
 // Initialize the Next-Intl plugin
