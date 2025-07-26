@@ -1,29 +1,25 @@
 {
   "Header": {
-    "features": "特性",
-    "cases": "案例",
-    "community": "社区",
-    "pricing": "定价",
-    "blog": "博客",
-    "login": "登录",
-    "try_now": "立即体验"
+    "work": "作品",
+    "about": "关于",
+    "process": "思考",
+    "contact": "联系"
   },
   "RootLayout": {
     "home_link": "首页",
-    "about_link": "关于我们",
-    "counter_link": "计数器",
-    "portfolio_link": "作品集",
-    "sign_in_link": "登录",
-    "sign_up_link": "注册"
+    "about_link": "关于",
+    "portfolio_link": "作品",
+    "process_link": "思考",
+    "contact_link": "联系"
   },
   "BaseTemplate": {
-    "description": "Neurora，为创作者而生的 AI 智能创作平台",
-    "made_with": "由 <author></author> 精心打造。"
+    "description": "石藝苑建築師作品集 - 圍繞社區參與和在地文化展開的建築實踐",
+    "made_with": "由 <author></author> 設計。"
   },
   "Index": {
-    "meta_title": "Neurora - 为创作者而生的 AI 智能创作平台",
-    "meta_description": "Neurora，专为知识博主和内容创作者打造的 AI 智能创作平台，让一部分人先机械飞升，最大化思想者的价值。",
-    "sponsors_title": "合作伙伴"
+    "meta_title": "石藝苑建築師 - 鄉村教育建築實踐",
+    "meta_description": "石藝苑建築師作品集，專注於鄉村教育建築設計，通過社區參與和在地文化展開建築實踐，探索空間的敘事性與社會影響力。",
+    "sponsors_title": "合作夥伴"
   },
   "Counter": {
     "meta_title": "计数器",
@@ -43,25 +39,34 @@
     "count": "计数: {count}"
   },
   "About": {
-    "meta_title": "关于我们",
-    "meta_description": "了解 Neurora 团队和我们的使命",
-    "about_paragraph": "欢迎来到 Neurora！我们是一支充满激情的团队，致力于为创作者打造最先进的 AI 智能创作平台。",
-    "translation_powered_by": "翻译服务由以下提供支持"
+    "meta_title": "關於石藝苑",
+    "meta_description": "了解石藝苑建築師的背景、設計理念和PEER合作經歷",
+    "architect_background": "石藝苑，世居侗族，獲得RIBA全球傑出人才認證的建築師。她致力於通過建築設計連接傳統與現代，為中國鄉村教育帶來積極變化。",
+    "peer_collaboration": "PEER毅恆摯友是一個致力於改善中國鄉村教育環境的組織。作為建築顧問，石藝苑與團隊共同為各地學校提供設計和改造服務。"
   },
   "Portfolio": {
-    "meta_title": "作品集",
-    "meta_description": "欢迎访问我的作品集页面！",
-    "presentation": "欢迎访问我的作品集页面！在这里您将看到我精心策划的作品和成就集合。通过这个作品集，我希望展示我的专业技能、创造力以及能为您的项目带来的价值。",
-    "portfolio_name": "作品集 {name}",
-    "error_reporting_powered_by": "错误报告由以下提供支持",
-    "coverage_powered_by": "代码覆盖率由以下提供支持"
+    "meta_title": "建築作品 - 石藝苑",
+    "meta_description": "石藝苑建築師的鄉村教育建築作品集，展示PEER合作學校項目及其他建築實踐。",
+    "presentation": "這些項目見證了建築如何成為連接傳統與現代、個人與社區的橋樑。每一個空間都承載著故事，每一次改造都是對教育環境的重新思考。",
+    "map_title": "PEER合作學校分佈",
+    "projects_by_region": "按地區瀏覽項目"
   },
-  "PortfolioSlug": {
-    "meta_title": "作品集 {slug}",
-    "meta_description": "作品集 {slug} 详情",
-    "header": "作品集 {slug}",
-    "content": "为企业活动创建了一套推广材料和品牌元素。精心设计了视觉统一的主题，包括标志、海报、横幅和数字资产。在融入客户品牌标识的同时，注入了现代和创新的设计理念。",
-    "code_review_powered_by": "代码审查由以下提供支持"
+  "ProjectDetail": {
+    "meta_title": "{name} - 石藝苑建築作品",
+    "meta_description": "{name}項目詳情 - 石藝苑建築師的鄉村教育建築實踐",
+    "project_info": "項目資訊",
+    "location": "地點",
+    "year": "年份",
+    "area": "面積",
+    "cost": "造價",
+    "architect": "主持建築師",
+    "collaborators": "合作夥伴",
+    "students": "參與學生",
+    "design_concept": "設計理念",
+    "community_engagement": "社區參與",
+    "cultural_integration": "文化融入",
+    "before_after": "改造對比",
+    "impact": "社會影響"
   },
   "SignIn": {
     "meta_title": "登录",
@@ -80,37 +85,37 @@
     "meta_title": "用户资料"
   },
   "Footer": {
-    "company_title": "公司",
-    "product_title": "产品", 
-    "support_title": "支持",
-    "newsletter_title": "订阅更新",
-    "newsletter_description": "获取最新的产品更新和技术资讯。",
-    "email_placeholder": "输入您的邮箱",
-    "subscribe_button": "订阅",
-    "rights_reserved": "保留所有权利。",
+    "navigation_title": "導航",
+    "connect_title": "連接", 
+    "projects_title": "項目",
+    "newsletter_title": "關注更新",
+    "newsletter_description": "獲取最新項目動態和設計思考。",
+    "email_placeholder": "輸入您的郵箱",
+    "subscribe_button": "關注",
+    "rights_reserved": "保留所有權利。",
     "links": {
-      "company": {
-        "about": "关于我们",
-        "careers": "加入我们", 
-        "press": "媒体报道",
-        "blog": "博客"
+      "navigation": {
+        "home": "首頁",
+        "work": "作品", 
+        "about": "關於",
+        "process": "思考",
+        "contact": "联系"
       },
-      "product": {
-        "platform": "Neurora 平台",
-        "pricing": "定价方案",
-        "api_docs": "API 文档",
-        "help_docs": "帮助文档"
+      "projects": {
+        "peer_schools": "PEER合作學校",
+        "jingshan": "京山一中",
+        "yuanling": "沅陵六中",
+        "longsheng": "龍勝中學"
       },
-      "support": {
-        "help_center": "帮助中心",
-        "contact": "联系我们",
-        "status": "服务状态", 
-        "privacy": "隐私政策"
+      "connect": {
+        "email": "郵箱聯系",
+        "linkedin": "LinkedIn",
+        "riba": "RIBA Profile", 
+        "peer": "PEER官網"
       },
       "legal": {
-        "terms": "服务条款",
-        "privacy": "隐私政策",
-        "cookies": "Cookie 政策"
+        "terms": "使用條款",
+        "privacy": "隱私政策"
       }
     }
   },
@@ -120,66 +125,61 @@
     "sign_out": "退出登录"
   },
   "HomePage": {
-    "hero_title": "Neurora - 为创作者而生",
-    "hero_description": "专为知识博主和内容创作者打造的 AI 智能创作平台，让一部分人先机械飞升，最大化思想者的价值。",
-    "get_started": "立即开始",
-    "view_docs": "查看文档",
-    "hero_card_title": "AI 创作平台",
-    "hero_card_subtitle": "智能 • 高效 • 专业",
-    "features_title": "为创作者量身打造",
-    "features_description": "集成先进的 AI 技术，提供完整的创作工具链，助力内容创作者实现价值最大化。",
-    "cta_title": "准备开始创作了吗？",
-    "cta_description": "加入数千名创作者，使用 Neurora 打造专业内容，释放创作潜能。",
-    "cta_start": "立即开始",
-    "cta_github": "了解更多",
-    "features": {
-      "nextjs": {
-        "title": "Next.js 15 + App Router",
-        "description": "基于最新的 Next.js 15 和 App Router，支持 React 19 并配置了 TypeScript，提供卓越的开发体验。"
+    "hero_title": "圍繞社區參與和在地文化展開的建築實踐",
+    "hero_description": "我是石藝苑，一位專注於鄉村教育建築的設計師。通過與PEER毅恆摯友的合作，我致力於探索空間的敘事性與社會影響力，為中國的鄉村教育帶來詩意而溫暖的改變。",
+    "view_work": "查看作品",
+    "learn_more": "了解更多",
+    "hero_card_title": "以人為本的設計",
+    "hero_card_subtitle": "教育 • 文化 • 社區",
+    "philosophy_title": "設計理念",
+    "philosophy_description": "建築不僅僅是空間的建造，更是文化的傳承和社區的連結。每一個項目都是與當地師生、工匠共同創作的故事。",
+    "cta_title": "讓建築成為溫暖的力量",
+    "cta_description": "通過建築設計連接傳統與現代，為鄉村教育創造更好的學習環境。",
+    "contact_me": "聯系我",
+    "explore_projects": "探索項目",
+    "principles": {
+      "community": {
+        "title": "社區參與",
+        "description": "每一個項目都深入當地社區，與師生、家長共同參與設計過程，確保空間真正滿足使用者需求。"
       },
-      "design": {
-        "title": "现代设计系统", 
-        "description": "完整的设计令牌系统和组件库，遵循现代 UI/UX 设计原则，支持 Tailwind CSS v4。"
-      },
-      "security": {
-        "title": "企业级安全认证",
-        "description": "集成 Clerk 认证系统，支持多因素认证、社交登录等企业级安全特性。"
-      },
-      "performance": {
-        "title": "性能优先",
-        "description": "使用现代构建工具优化，支持 Turbopack、代码分割和性能监控，确保极致体验。"
-      },
-      "i18n": {
-        "title": "国际化就绪",
-        "description": "内置 next-intl 国际化支持，配合 Crowdin 实现专业的多语言工作流。"
-      },
-      "testing": {
-        "title": "质量保证",
-        "description": "完整的测试套件，包含 Vitest、React Testing Library 和 Playwright 端到端测试。"
-      }
-    },
-    "use_cases_title": "适合各种创作场景",
-    "use_cases_description": "无论您是个人知识博主还是企业内容团队，Neurora 都能与您一起扩展创作边界。",
-    "tabs": {
-      "individual": {
-        "label": "个人博主",
-        "title": "个人知识分享",
-        "description": "专为个人知识博主设计，提供内容创作、SEO优化和粉丝互动工具，助力个人品牌建设。"
-      },
-      "team": {
-        "label": "团队协作",
-        "title": "团队内容创作",
-        "description": "支持多人协作编辑、版本控制和内容审核流程，适合内容团队高效协作创作。"
-      },
-      "enterprise": {
-        "label": "企业级",
-        "title": "企业内容营销",
-        "description": "企业级安全和管理功能，支持品牌一致性管理、多渠道发布和数据分析。"
+      "culture": {
+        "title": "在地文化", 
+        "description": "尊重並融入當地文化元素，如龍勝中學的侗族鼓樓原型，讓建築成為文化傳承的載體。"
       },
       "education": {
-        "label": "教育培训",
-        "title": "在线教育内容",
-        "description": "专门为教育工作者打造，支持课程内容创作、学习路径设计和学员互动。"
+        "title": "教育導向",
+        "description": "專注於鄉村教育環境改善，通過空間設計為學生創造更好的學習和成長環境。"
+      },
+      "collaboration": {
+        "title": "PEER合作",
+        "description": "作為PEER毅恆摯友的建築顧問，與團隊共同為中國鄉村學校提供建築設計和改造服務。"
+      },
+      "sustainability": {
+        "title": "永續設計",
+        "description": "運用在地材料和傳統工藝，創造環保且符合當地氣候的建築解決方案。"
+      },
+      "storytelling": {
+        "title": "空間敘事",
+        "description": "每一個設計都承載著獨特的故事，通過建築語言傳達地方精神和文化內涵。"
+      }
+    },
+    "featured_projects_title": "精選項目",
+    "featured_projects_description": "這些項目展示了如何通過社區參與和在地文化融入，為鄉村教育創造有意義的空間。",
+    "projects": {
+      "jingshan": {
+        "label": "京山一中",
+        "title": "京山第一中學PEER空間",
+        "description": "為高中生打造的多功能學習空間，融合了現代教育理念和地方文化特色。"
+      },
+      "yuanling": {
+        "label": "沅陵六中",
+        "title": "沅陵第六中學PEER空間",
+        "description": "通過空間改造為學生提供更好的學習環境，強化了師生互動和協作學習。"
+      },
+      "longsheng": {
+        "label": "龍勝中學",
+        "title": "龍勝中學PEER空間",
+        "description": "融入侗族鼓樓建築元素，展示了傳統文化與現代教育的完美融合。"
       }
     }
   },
@@ -289,7 +289,7 @@
   "PrivacyPolicy": {
     "meta_title": "隐私政策",
     "meta_description": "Neurora AI 智能创作平台隐私政策",
-    "title": "隐私政策",
+    "title": "隱私政策",
     "sections": {
       "introduction": {
         "title": "1. 简介",
@@ -375,6 +375,22 @@
         "content": "如果您对我们使用 Cookie 有任何疑问，请通过 mark@cs-magic.com 联系我们。"
       }
     }
+  },
+  "Contact": {
+    "meta_title": "聯系石藝苑",
+    "meta_description": "聯系石藝苑建築師，討論建築項目或合作機會",
+    "title": "讓我們一起創造有意義的空間",
+    "description": "如果您有建築項目需求或希望了解更多關於我的工作，歡迎與我聯系。",
+    "email_label": "郵箱",
+    "linkedin_label": "LinkedIn",
+    "riba_label": "RIBA Profile",
+    "collaboration_note": "關於 PEER 合作項目，請訪問 PEER 官方網站了解更多資訊。"
+  },
+  "Process": {
+    "meta_title": "設計思考 - 石藝苑",
+    "meta_description": "石藝苑建築師的設計思考、項目幕後故事和對鄉村教育的觀察",
+    "title": "設計思考與實踐",
+    "description": "分享設計過程中的思考、與工匠和學生的互動故事，以及對於鄉村教育、少數民族建築工藝等議題的觀察。"
   },
   "Pricing": {
     "meta_title": "定价 - Neurora AI 智能创作平台",

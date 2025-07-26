@@ -6,20 +6,17 @@ import { useTranslations } from 'next-intl';
 import { cn } from '@/utils/Helpers';
 import { Button } from '../ui/Button';
 import { Container } from './Container';
-import { NeuroraIcon } from '../ui/NeuroraIcon';
 import { LocaleSwitcher } from '../LocaleSwitcher';
-import packageJson from '../../../package.json';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const t = useTranslations('Header');
 
   const navigation = [
-    { name: t('features'), href: '/features' },
-    { name: t('cases'), href: '/cases' },
-    { name: t('community'), href: '/community' },
-    { name: t('pricing'), href: '/pricing' },
-    { name: t('blog'), href: '/blog' },
+    { name: t('work'), href: '/portfolio' },
+    { name: t('about'), href: '/about' },
+    { name: t('process'), href: '/process' },
+    { name: t('contact'), href: '/contact' },
   ];
 
   return (
@@ -28,13 +25,12 @@ const Header = () => {
         <div className="flex items-center justify-between py-4 lg:py-6">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-2 no-underline" style={{ color: 'var(--color-primary, #d97757)' }}>
-              <NeuroraIcon className="h-8 w-8" />
-              <span className="text-xl font-bold">Neurora</span>
+            <Link href="/" className="flex items-center space-x-2 no-underline text-gray-900">
+              <div className="h-8 w-8 bg-gradient-to-br from-amber-600 to-blue-600 rounded-lg flex items-center justify-center text-white font-bold">
+                石
+              </div>
+              <span className="text-xl font-bold">石藝苑</span>
             </Link>
-            <span className="ml-2 px-2 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full border border-primary/20">
-              v{packageJson.version}
-            </span>
           </div>
 
           {/* Desktop Navigation */}
@@ -53,13 +49,10 @@ const Header = () => {
             </div>
           </nav>
 
-          {/* Desktop Actions */}
+          {/* Desktop Actions - Contact Button */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Button variant="secondary" size="md">
-              {t('login')}
-            </Button>
             <Button variant="primary" size="md">
-              {t('try_now')}
+              {t('contact')}
             </Button>
           </div>
 
@@ -119,11 +112,8 @@ const Header = () => {
               </Link>
             ))}
             <div className="flex flex-col space-y-3 pt-4 border-t border-border-default/20">
-              <Button variant="secondary" size="md" className="w-full">
-                {t('login')}
-              </Button>
               <Button variant="primary" size="md" className="w-full">
-                {t('try_now')}
+                {t('contact')}
               </Button>
             </div>
           </nav>

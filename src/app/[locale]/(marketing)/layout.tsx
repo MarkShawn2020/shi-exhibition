@@ -1,5 +1,4 @@
 import { setRequestLocale } from 'next-intl/server';
-import { DemoBanner } from '@/components/DemoBanner';
 import { Footer } from '@/components/layout/Footer';
 import { Header } from '@/components/layout/Header';
 
@@ -11,15 +10,12 @@ export default async function Layout(props: {
   setRequestLocale(locale);
 
   return (
-    <>
-      <DemoBanner />
-      <div className="min-h-screen flex flex-col">
-        <Header />
-        <main className="flex-grow">
-          {props.children}
-        </main>
-        <Footer />
-      </div>
-    </>
+    <div className="min-h-screen flex flex-col">
+      <Header />
+      <main className="flex-grow">
+        {props.children}
+      </main>
+      <Footer />
+    </div>
   );
 }
