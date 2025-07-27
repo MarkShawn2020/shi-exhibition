@@ -1,9 +1,8 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import Image from 'next/image';
-import { routing } from '@/libs/I18nRouting';
+import { notFound } from 'next/navigation';
 import { Container } from '@/components/layout/Container';
 import { Card, CardContent, CardHeader } from '@/components/ui/Card';
-import { notFound } from 'next/navigation';
+import { routing } from '@/libs/I18nRouting';
 
 const projects = {
   jingshan: {
@@ -70,8 +69,8 @@ export async function generateMetadata(props: IPortfolioDetailProps) {
   });
 
   return {
-    title: t('meta_title', { slug }),
-    description: t('meta_description', { slug }),
+    title: (t as any)('meta_title', { slug }),
+    description: (t as any)('meta_description', { slug }),
   };
 }
 
@@ -79,14 +78,14 @@ export default async function PortfolioDetail(props: IPortfolioDetailProps) {
   const { locale, slug } = await props.params;
   setRequestLocale(locale);
   const project = projects[slug as keyof typeof projects];
-  
+
   if (!project) {
     notFound();
   }
 
   const t = await getTranslations({
     locale,
-    namespace: 'ProjectDetail',
+    namespace: 'ProjectDetail' as any,
   });
 
   return (
@@ -98,19 +97,35 @@ export default async function PortfolioDetail(props: IPortfolioDetailProps) {
             <h1 className="u-display-xl mb-6 text-gray-900">{project.name}</h1>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-gray-600 mb-8">
               <div>
-                <span className="font-medium text-gray-900">{t('location')}: </span>
+                <span className="font-medium text-gray-900">
+                  {(t as any)('location')}
+                  :
+                  {' '}
+                </span>
                 {project.location}
               </div>
               <div>
-                <span className="font-medium text-gray-900">{t('year')}: </span>
+                <span className="font-medium text-gray-900">
+                  {(t as any)('year')}
+                  :
+                  {' '}
+                </span>
                 {project.year}
               </div>
               <div>
-                <span className="font-medium text-gray-900">{t('area')}: </span>
+                <span className="font-medium text-gray-900">
+                  {(t as any)('area')}
+                  :
+                  {' '}
+                </span>
                 {project.area}
               </div>
               <div>
-                <span className="font-medium text-gray-900">{t('cost')}: </span>
+                <span className="font-medium text-gray-900">
+                  {(t as any)('cost')}
+                  :
+                  {' '}
+                </span>
                 {project.cost}
               </div>
             </div>
@@ -147,7 +162,7 @@ export default async function PortfolioDetail(props: IPortfolioDetailProps) {
       <section className="w-full py-16 lg:py-24 bg-amber-50">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="u-display-m mb-8 text-gray-900">{t('design_concept')}</h2>
+            <h2 className="u-display-m mb-8 text-gray-900">{(t as any)('design_concept')}</h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="u-paragraph-l text-gray-700 leading-relaxed">
@@ -172,7 +187,7 @@ export default async function PortfolioDetail(props: IPortfolioDetailProps) {
       <section className="w-full py-16 lg:py-24">
         <Container>
           <div className="max-w-6xl mx-auto">
-            <h2 className="u-display-m mb-12 text-gray-900 text-center">{t('before_after')}</h2>
+            <h2 className="u-display-m mb-12 text-gray-900 text-center">{(t as any)('before_after')}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-4">改造前</h3>
@@ -205,7 +220,7 @@ export default async function PortfolioDetail(props: IPortfolioDetailProps) {
       <section className="w-full py-16 lg:py-24 bg-gray-50">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="u-display-m mb-8 text-gray-900">{t('project_info')}</h2>
+            <h2 className="u-display-m mb-8 text-gray-900">{(t as any)('project_info')}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <Card>
                 <CardContent className="p-6">
@@ -214,29 +229,41 @@ export default async function PortfolioDetail(props: IPortfolioDetailProps) {
                   </CardHeader>
                   <div className="space-y-3 text-sm">
                     <div className="flex justify-between">
-                      <span className="text-gray-600">{t('architect')}:</span>
+                      <span className="text-gray-600">
+                        {(t as any)('architect')}
+                        :
+                      </span>
                       <span className="text-gray-900">{project.architect}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-600">{t('year')}:</span>
+                      <span className="text-gray-600">
+                        {(t as any)('year')}
+                        :
+                      </span>
                       <span className="text-gray-900">{project.year}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-600">{t('area')}:</span>
+                      <span className="text-gray-600">
+                        {(t as any)('area')}
+                        :
+                      </span>
                       <span className="text-gray-900">{project.area}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-600">{t('cost')}:</span>
+                      <span className="text-gray-600">
+                        {(t as any)('cost')}
+                        :
+                      </span>
                       <span className="text-gray-900">{project.cost}</span>
                     </div>
                   </div>
                 </CardContent>
               </Card>
-              
+
               <Card>
                 <CardContent className="p-6">
                   <CardHeader className="p-0 mb-4">
-                    <h3 className="text-lg font-semibold text-gray-900">{t('collaborators')}</h3>
+                    <h3 className="text-lg font-semibold text-gray-900">{(t as any)('collaborators')}</h3>
                   </CardHeader>
                   <div className="space-y-3 text-sm">
                     <div>
@@ -244,7 +271,10 @@ export default async function PortfolioDetail(props: IPortfolioDetailProps) {
                       <span className="text-gray-900">{project.collaborators}</span>
                     </div>
                     <div>
-                      <span className="text-gray-600 block mb-1">{t('students')}:</span>
+                      <span className="text-gray-600 block mb-1">
+                        {(t as any)('students')}
+                        :
+                      </span>
                       <span className="text-gray-900">{project.students}</span>
                     </div>
                   </div>
@@ -259,7 +289,7 @@ export default async function PortfolioDetail(props: IPortfolioDetailProps) {
       <section className="w-full py-16 lg:py-24">
         <Container>
           <div className="max-w-4xl mx-auto">
-            <h2 className="u-display-m mb-8 text-gray-900">{t('impact')}</h2>
+            <h2 className="u-display-m mb-8 text-gray-900">{(t as any)('impact')}</h2>
             <p className="u-paragraph-l text-gray-700 leading-relaxed">
               {project.impact}
             </p>

@@ -1,22 +1,23 @@
 'use client';
 
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import React, { useState } from 'react';
-import { useTranslations } from 'next-intl';
 import { cn } from '@/utils/Helpers';
+import { LocaleSwitcher } from '../LocaleSwitcher';
 import { Button } from '../ui/Button';
 import { Container } from './Container';
-import { LocaleSwitcher } from '../LocaleSwitcher';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const t = useTranslations('Header');
+  const t = useTranslations('Header' as any);
 
   const navigation = [
-    { name: t('work'), href: '/portfolio' },
-    { name: t('about'), href: '/about' },
-    { name: t('process'), href: '/process' },
-    { name: t('contact'), href: '/contact' },
+    { name: (t as any)('work'), href: '/portfolio' },
+    { name: (t as any)('about'), href: '/about' },
+    { name: (t as any)('process'), href: '/process' },
+    { name: '3D展廳', href: '/exhibition', isSpecial: true },
+    { name: (t as any)('contact'), href: '/contact' },
   ];
 
   return (
@@ -39,7 +40,11 @@ const Header = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-text-main hover:text-primary transition-colors no-underline"
+                className={`transition-colors no-underline ${
+                  item.isSpecial
+                    ? 'text-yellow-500 hover:text-yellow-400 font-medium'
+                    : 'text-text-main hover:text-primary'
+                }`}
               >
                 {item.name}
               </Link>
@@ -52,7 +57,7 @@ const Header = () => {
           {/* Desktop Actions - Contact Button */}
           <div className="hidden lg:flex items-center space-x-4">
             <Button variant="primary" size="md">
-              {t('contact')}
+              {(t as any)('contact')}
             </Button>
           </div>
 
@@ -105,7 +110,11 @@ const Header = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-text-main hover:text-primary transition-colors py-2 no-underline"
+                className={`transition-colors py-2 no-underline ${
+                  item.isSpecial
+                    ? 'text-yellow-500 hover:text-yellow-400 font-medium'
+                    : 'text-text-main hover:text-primary'
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
@@ -113,7 +122,7 @@ const Header = () => {
             ))}
             <div className="flex flex-col space-y-3 pt-4 border-t border-border-default/20">
               <Button variant="primary" size="md" className="w-full">
-                {t('contact')}
+                {(t as any)('contact')}
               </Button>
             </div>
           </nav>

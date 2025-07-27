@@ -1,4 +1,3 @@
-
 ### Prompt für die Website-Gestaltung
 
 **Rolle:** Du bist ein Experte für UI/UX- und Webdesign mit einem scharfen Auge für minimalistische, zeitgenössische und brutalistisch inspirierte Ästhetik.

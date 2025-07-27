@@ -1,29 +1,29 @@
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 import React from 'react';
-import { useTranslations } from 'next-intl';
 import { Container } from './Container';
 
 const Footer = () => {
-  const t = useTranslations('Footer');
+  const t = useTranslations('Footer' as any);
   const footerLinks = {
     navigation: [
-      { name: t('links.navigation.home'), href: '/' },
-      { name: t('links.navigation.work'), href: '/portfolio' },
-      { name: t('links.navigation.about'), href: '/about' },
-      { name: t('links.navigation.process'), href: '/process' },
-      { name: t('links.navigation.contact'), href: '/contact' },
+      { name: (t as any)('links.navigation.home'), href: '/' },
+      { name: (t as any)('links.navigation.work'), href: '/portfolio' },
+      { name: (t as any)('links.navigation.about'), href: '/about' },
+      { name: (t as any)('links.navigation.process'), href: '/process' },
+      { name: (t as any)('links.navigation.contact'), href: '/contact' },
     ],
     projects: [
-      { name: t('links.projects.peer_schools'), href: '/portfolio' },
-      { name: t('links.projects.jingshan'), href: '/portfolio/jingshan' },
-      { name: t('links.projects.yuanling'), href: '/portfolio/yuanling' },
-      { name: t('links.projects.longsheng'), href: '/portfolio/longsheng' },
+      { name: (t as any)('links.projects.peer_schools'), href: '/portfolio' },
+      { name: (t as any)('links.projects.jingshan'), href: '/portfolio/jingshan' },
+      { name: (t as any)('links.projects.yuanling'), href: '/portfolio/yuanling' },
+      { name: (t as any)('links.projects.longsheng'), href: '/portfolio/longsheng' },
     ],
     connect: [
-      { name: t('links.connect.email'), href: 'mailto:contact@shiyiyuan.com' },
-      { name: t('links.connect.linkedin'), href: 'https://linkedin.com/in/shiyiyuan' },
-      { name: t('links.connect.riba'), href: 'https://riba.com/profile/shiyiyuan' },
-      { name: t('links.connect.peer'), href: 'https://peer.org.cn' },
+      { name: (t as any)('links.connect.email'), href: 'mailto:contact@shiyiyuan.com' },
+      { name: (t as any)('links.connect.linkedin'), href: 'https://linkedin.com/in/shiyiyuan' },
+      { name: (t as any)('links.connect.riba'), href: 'https://riba.com/profile/shiyiyuan' },
+      { name: (t as any)('links.connect.peer'), href: 'https://peer.org.cn' },
     ],
   };
 
@@ -53,7 +53,7 @@ const Footer = () => {
                 <a href="https://linkedin.com/in/shiyiyuan" className="text-gray-400 hover:text-white transition-colors">
                   <span className="sr-only">LinkedIn</span>
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                   </svg>
                 </a>
                 <a href="https://peer.org.cn" className="text-gray-400 hover:text-white transition-colors">
@@ -68,7 +68,7 @@ const Footer = () => {
             {/* Links */}
             <div className="lg:col-span-2">
               <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
-                {t('navigation_title')}
+                {(t as any)('navigation_title')}
               </h3>
               <ul className="space-y-3">
                 {footerLinks.navigation.map(link => (
@@ -83,7 +83,7 @@ const Footer = () => {
 
             <div className="lg:col-span-2">
               <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
-                {t('projects_title')}
+                {(t as any)('projects_title')}
               </h3>
               <ul className="space-y-3">
                 {footerLinks.projects.map(link => (
@@ -98,7 +98,7 @@ const Footer = () => {
 
             <div className="lg:col-span-2">
               <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
-                {t('connect_title')}
+                {(t as any)('connect_title')}
               </h3>
               <ul className="space-y-3">
                 {footerLinks.connect.map(link => (
@@ -113,19 +113,19 @@ const Footer = () => {
 
             <div className="lg:col-span-2">
               <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
-                {t('newsletter_title')}
+                {(t as any)('newsletter_title')}
               </h3>
               <p className="text-gray-300 text-sm mb-4">
-                {t('newsletter_description')}
+                {(t as any)('newsletter_description')}
               </p>
               <div className="flex flex-col sm:flex-row gap-2">
                 <input
                   type="email"
-                  placeholder={t('email_placeholder')}
+                  placeholder={(t as any)('email_placeholder')}
                   className="flex-1 px-3 py-2 bg-gray-700 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
                 />
                 <button type="button" className="px-4 py-2 bg-primary text-white rounded-md hover:opacity-90 transition-opacity whitespace-nowrap">
-                  {t('subscribe_button')}
+                  {(t as any)('subscribe_button')}
                 </button>
               </div>
             </div>
@@ -135,14 +135,16 @@ const Footer = () => {
           <div className="mt-12 pt-8 border-t border-gray-700">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-gray-400 text-sm">
-                © 2025 石藝苑. {t('rights_reserved')}
+                © 2025 石藝苑.
+                {' '}
+                {(t as any)('rights_reserved')}
               </p>
               <div className="flex space-x-6 mt-4 md:mt-0">
                 <Link href="/terms" className="text-gray-400 hover:text-white text-sm transition-colors no-underline">
-                  {t('links.legal.terms')}
+                  {(t as any)('links.legal.terms')}
                 </Link>
                 <Link href="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors no-underline">
-                  {t('links.legal.privacy')}
+                  {(t as any)('links.legal.privacy')}
                 </Link>
               </div>
             </div>

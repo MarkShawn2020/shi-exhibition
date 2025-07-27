@@ -10,12 +10,12 @@ export async function generateMetadata(props: IContactProps) {
   const { locale } = await props.params;
   const t = await getTranslations({
     locale,
-    namespace: 'Contact',
+    namespace: 'Contact' as any,
   });
 
   return {
-    title: t('meta_title'),
-    description: t('meta_description'),
+    title: (t as any)('meta_title'),
+    description: (t as any)('meta_description'),
   };
 }
 
@@ -24,13 +24,13 @@ export default async function Contact(props: IContactProps) {
   setRequestLocale(locale);
   const t = await getTranslations({
     locale,
-    namespace: 'Contact',
+    namespace: 'Contact' as any,
   });
 
   const contactMethods = [
     {
       type: 'email',
-      label: t('email_label'),
+      label: (t as any)('email_label'),
       value: 'contact@shiyiyuan.com',
       href: 'mailto:contact@shiyiyuan.com',
       icon: '📧',
@@ -38,7 +38,7 @@ export default async function Contact(props: IContactProps) {
     },
     {
       type: 'linkedin',
-      label: t('linkedin_label'),
+      label: (t as any)('linkedin_label'),
       value: 'linkedin.com/in/shiyiyuan',
       href: 'https://linkedin.com/in/shiyiyuan',
       icon: '💼',
@@ -46,7 +46,7 @@ export default async function Contact(props: IContactProps) {
     },
     {
       type: 'riba',
-      label: t('riba_label'),
+      label: (t as any)('riba_label'),
       value: 'RIBA Profile',
       href: 'https://riba.com/profile/shiyiyuan',
       icon: '🏛️',
@@ -60,9 +60,9 @@ export default async function Contact(props: IContactProps) {
       <section className="w-full py-16 lg:py-24">
         <Container>
           <div className="text-center mb-16">
-            <h1 className="u-display-xl mb-6 text-gray-900">{t('title')}</h1>
+            <h1 className="u-display-xl mb-6 text-gray-900">{(t as any)('title')}</h1>
             <p className="u-paragraph-l text-gray-600 max-w-3xl mx-auto">
-              {t('description')}
+              {(t as any)('description')}
             </p>
           </div>
         </Container>
@@ -117,7 +117,7 @@ export default async function Contact(props: IContactProps) {
                       <h3 className="text-xl font-semibold text-blue-900">PEER 合作項目</h3>
                     </CardHeader>
                     <p className="text-blue-800 leading-relaxed">
-                      {t('collaboration_note')}
+                      {(t as any)('collaboration_note')}
                     </p>
                     <a
                       href="https://peer.org.cn"
@@ -145,7 +145,7 @@ export default async function Contact(props: IContactProps) {
                 主要服務於中國大陸地區的鄉村教育建築項目
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">專業服務</h3>
@@ -168,7 +168,7 @@ export default async function Contact(props: IContactProps) {
                   </li>
                 </ul>
               </div>
-              
+
               <div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">合作夥伴</h3>
                 <ul className="space-y-3 text-gray-700">

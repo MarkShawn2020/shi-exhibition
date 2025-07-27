@@ -1,7 +1,7 @@
-import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { setRequestLocale } from 'next-intl/server';
 import Link from 'next/link';
-import { Container } from '@/components/layout/Container';
 import { notFound } from 'next/navigation';
+import { Container } from '@/components/layout/Container';
 import { routing } from '@/libs/I18nRouting';
 
 const articles = {
@@ -76,9 +76,9 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata(props: IProcessDetailProps) {
-  const { locale, slug } = await props.params;
+  const { locale: _locale, slug } = await props.params;
   const article = articles[slug as keyof typeof articles];
-  
+
   if (!article) {
     return {
       title: 'Article Not Found',
@@ -88,7 +88,7 @@ export async function generateMetadata(props: IProcessDetailProps) {
 
   return {
     title: `${article.title} - 石藝苑設計思考`,
-    description: article.content.substring(0, 160) + '...',
+    description: `${article.content.substring(0, 160)}...`,
   };
 }
 
@@ -96,7 +96,7 @@ export default async function ProcessDetail(props: IProcessDetailProps) {
   const { locale, slug } = await props.params;
   setRequestLocale(locale);
   const article = articles[slug as keyof typeof articles];
-  
+
   if (!article) {
     notFound();
   }
@@ -108,22 +108,22 @@ export default async function ProcessDetail(props: IProcessDetailProps) {
         <Container>
           <div className="max-w-4xl mx-auto">
             <div className="mb-8">
-              <Link 
-                href="/process" 
+              <Link
+                href="/process"
                 className="inline-flex items-center text-blue-600 hover:text-blue-700 transition-colors no-underline"
               >
                 ← 返回設計思考
               </Link>
             </div>
-            
+
             <div className="mb-8">
               <span className="bg-amber-100 text-amber-700 px-3 py-1 rounded-full text-sm">
                 {article.category}
               </span>
             </div>
-            
+
             <h1 className="u-display-xl mb-6 text-gray-900">{article.title}</h1>
-            
+
             <div className="flex items-center space-x-4 text-gray-500 text-sm mb-12">
               <span>{article.date}</span>
               <span>•</span>

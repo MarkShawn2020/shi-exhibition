@@ -11,12 +11,12 @@ export async function generateMetadata(props: IPortfolioProps) {
   const { locale } = await props.params;
   const t = await getTranslations({
     locale,
-    namespace: 'Portfolio',
+    namespace: 'Portfolio' as any,
   });
 
   return {
-    title: t('meta_title'),
-    description: t('meta_description'),
+    title: (t as any)('meta_title'),
+    description: (t as any)('meta_description'),
   };
 }
 
@@ -25,7 +25,7 @@ export default async function Portfolio(props: IPortfolioProps) {
   setRequestLocale(locale);
   const t = await getTranslations({
     locale,
-    namespace: 'Portfolio',
+    namespace: 'Portfolio' as any,
   });
 
   const projects = [
@@ -66,7 +66,7 @@ export default async function Portfolio(props: IPortfolioProps) {
           <div className="text-center mb-12">
             <h1 className="u-display-xl mb-6 text-gray-900">建築作品</h1>
             <p className="u-paragraph-l text-gray-600 max-w-3xl mx-auto">
-              {t('presentation')}
+              {(t as any)('presentation')}
             </p>
           </div>
         </Container>
@@ -76,9 +76,9 @@ export default async function Portfolio(props: IPortfolioProps) {
       <section className="w-full py-16 lg:py-24 bg-amber-50">
         <Container>
           <div className="text-center mb-12">
-            <h2 className="u-display-m mb-4 text-gray-900">{t('map_title')}</h2>
+            <h2 className="u-display-m mb-4 text-gray-900">{(t as any)('map_title')}</h2>
             <p className="u-paragraph-l text-gray-600">
-              {t('projects_by_region')}
+              {(t as any)('projects_by_region')}
             </p>
           </div>
 
@@ -91,7 +91,7 @@ export default async function Portfolio(props: IPortfolioProps) {
                 <p className="text-sm mt-2 text-gray-600">PEER合作學校分佈</p>
               </div>
             </div>
-            
+
             {/* Project Markers */}
             {projects.map(project => (
               <div

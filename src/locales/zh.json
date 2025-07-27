@@ -3,6 +3,7 @@
     "work": "作品",
     "about": "关于",
     "process": "思考",
+    "exhibition": "3D展廳",
     "contact": "联系"
   },
   "RootLayout": {
@@ -86,7 +87,7 @@
   },
   "Footer": {
     "navigation_title": "導航",
-    "connect_title": "連接", 
+    "connect_title": "連接",
     "projects_title": "項目",
     "newsletter_title": "關注更新",
     "newsletter_description": "獲取最新項目動態和設計思考。",
@@ -96,7 +97,7 @@
     "links": {
       "navigation": {
         "home": "首頁",
-        "work": "作品", 
+        "work": "作品",
         "about": "關於",
         "process": "思考",
         "contact": "联系"
@@ -110,7 +111,7 @@
       "connect": {
         "email": "郵箱聯系",
         "linkedin": "LinkedIn",
-        "riba": "RIBA Profile", 
+        "riba": "RIBA Profile",
         "peer": "PEER官網"
       },
       "legal": {
@@ -143,7 +144,7 @@
         "description": "每一個項目都深入當地社區，與師生、家長共同參與設計過程，確保空間真正滿足使用者需求。"
       },
       "culture": {
-        "title": "在地文化", 
+        "title": "在地文化",
         "description": "尊重並融入當地文化元素，如龍勝中學的侗族鼓樓原型，讓建築成為文化傳承的載體。"
       },
       "education": {
@@ -190,7 +191,7 @@
   "notifications": {
     "close": "关闭",
     "success_title": "操作成功",
-    "error_title": "操作失败", 
+    "error_title": "操作失败",
     "warning_title": "注意",
     "info_title": "提示",
     "save_success": "保存成功",
@@ -465,14 +466,14 @@
     "features_title": "连接您喜爱的平台",
     "features_description": "在所有主流平台上发布和管理您的内容",
     "supported_platforms": [
-      {"name": "微信公众号", "description": "公众号文章发布"},
-      {"name": "知乎", "description": "专业问答内容"},
-      {"name": "小红书", "description": "生活方式内容"},
-      {"name": "抖音", "description": "短视频内容"},
-      {"name": "微博", "description": "社交媒体营销"},
-      {"name": "B站", "description": "视频描述和评论"},
-      {"name": "WordPress", "description": "博客发布"},
-      {"name": "Medium", "description": "文章发布"}
+      { "name": "微信公众号", "description": "公众号文章发布" },
+      { "name": "知乎", "description": "专业问答内容" },
+      { "name": "小红书", "description": "生活方式内容" },
+      { "name": "抖音", "description": "短视频内容" },
+      { "name": "微博", "description": "社交媒体营销" },
+      { "name": "B站", "description": "视频描述和评论" },
+      { "name": "WordPress", "description": "博客发布" },
+      { "name": "Medium", "description": "文章发布" }
     ],
     "testimonial": {
       "quote": "Neurora 彻底改变了我们的内容创作方式。AI 助手非常直观，帮助我们在所有渠道保持内容的一致性。",

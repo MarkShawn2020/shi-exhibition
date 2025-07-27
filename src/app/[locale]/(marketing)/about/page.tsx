@@ -1,5 +1,4 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import Image from 'next/image';
 import { Container } from '@/components/layout/Container';
 import { Card, CardContent, CardHeader } from '@/components/ui/Card';
 
@@ -15,8 +14,8 @@ export async function generateMetadata(props: IAboutProps) {
   });
 
   return {
-    title: t('meta_title'),
-    description: t('meta_description'),
+    title: (t as any)('meta_title'),
+    description: (t as any)('meta_description'),
   };
 }
 
@@ -59,18 +58,18 @@ export default async function About(props: IAboutProps) {
                   </div>
                 </div>
               </div>
-              
+
               <div>
                 <h2 className="u-display-m mb-6 text-gray-900">建築師背景</h2>
                 <div className="space-y-6 text-gray-700 leading-relaxed">
                   <p>
-                    {t('architect_background')}
+                    {(t as any)('architect_background')}
                   </p>
                   <p>
                     她的作品不僅僅關注建築本身，更重視與當地社區的深度交流和合作。每一個項目都是一個關於人、文化和地方的故事，展示了建築如何成為社會變遷的媒介。
                   </p>
                 </div>
-                
+
                 {/* Credentials */}
                 <div className="mt-8 space-y-4">
                   <div className="flex items-center space-x-3">
@@ -102,7 +101,7 @@ export default async function About(props: IAboutProps) {
                 一個致力於改善中國鄉村教育環境的公益組織
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <Card>
                 <CardContent className="p-8">
@@ -114,20 +113,20 @@ export default async function About(props: IAboutProps) {
                   </p>
                 </CardContent>
               </Card>
-              
+
               <Card>
                 <CardContent className="p-8">
                   <CardHeader className="p-0 mb-6">
                     <h3 className="text-xl font-semibold text-gray-900">石藝苑的角色</h3>
                   </CardHeader>
                   <p className="text-gray-700 leading-relaxed">
-                    {t('peer_collaboration')}
+                    {(t as any)('peer_collaboration')}
                     通過與PEER的合作，石藝苑將建築設計的專業知識與公益事業相結合，為鄉村教育的發展貢獻力量。
                   </p>
                 </CardContent>
               </Card>
             </div>
-            
+
             {/* PEER Projects Stats */}
             <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
               <div>

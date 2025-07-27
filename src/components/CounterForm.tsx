@@ -10,7 +10,7 @@ import { useFormButtonState } from '@/hooks/useButtonState';
 import { CounterValidation } from '@/validations/CounterValidation';
 
 export const CounterForm = () => {
-  const t = useTranslations('CounterForm');
+  const t = useTranslations('CounterForm' as any);
   const form = useForm({
     resolver: zodResolver(CounterValidation),
     defaultValues: {
@@ -21,7 +21,7 @@ export const CounterForm = () => {
   const formRef = useRef<HTMLFormElement>(null);
 
   // 使用统一的按钮状态管理
-  const buttonState = useFormButtonState(formRef, ['increment']);
+  const buttonState = useFormButtonState(formRef as React.RefObject<HTMLFormElement>, ['increment']);
 
   const handleIncrement = form.handleSubmit(async (data) => {
     // 使用统一的异步执行方法
@@ -50,23 +50,22 @@ export const CounterForm = () => {
   // 计算禁用状态
   const isFormInvalid = Object.keys(form.formState.errors).length > 0;
   const isDisabled = buttonState.isDisabled || isFormInvalid || form.formState.isSubmitting;
-  
+
   let disabledReason = buttonState.disabledReason;
   if (isFormInvalid) {
-    disabledReason = t('error_increment_range');
+    disabledReason = (t as any)('error_increment_range');
   } else if (form.formState.isSubmitting) {
-    disabledReason = t('submitting');
+    disabledReason = (t as any)('submitting');
   }
 
   return (
     <form ref={formRef} onSubmit={handleIncrement}>
-      <p>{t('presentation')}</p>
+      <p>{(t as any)('presentation')}</p>
       <div>
         <label className="text-sm font-bold text-gray-700" htmlFor="increment">
-          {t('label_increment')}
+          {(t as any)('label_increment')}
           <input
             id="increment"
-            name="increment"
             type="number"
             className="ml-2 w-32 appearance-none rounded-sm border border-gray-200 px-2 py-1 text-sm leading-tight text-gray-700 focus:outline-hidden focus:ring-3 focus:ring-blue-300/50"
             {...form.register('increment')}
@@ -75,7 +74,7 @@ export const CounterForm = () => {
 
         {form.formState.errors.increment && (
           <div className="my-2 text-xs italic text-red-500">
-            {t('error_increment_range')}
+            {(t as any)('error_increment_range')}
           </div>
         )}
       </div>
@@ -88,9 +87,9 @@ export const CounterForm = () => {
           state={buttonState.state}
           disabled={isDisabled}
           disabledReason={disabledReason}
-          loadingText={t('loading_submit')}
+          loadingText={(t as any)('loading_submit')}
         >
-          {t('button_increment')}
+          {(t as any)('button_increment')}
         </Button>
       </div>
     </form>

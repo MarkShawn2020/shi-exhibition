@@ -11,12 +11,12 @@ export async function generateMetadata(props: IProcessProps) {
   const { locale } = await props.params;
   const t = await getTranslations({
     locale,
-    namespace: 'Process',
+    namespace: 'Process' as any,
   });
 
   return {
-    title: t('meta_title'),
-    description: t('meta_description'),
+    title: (t as any)('meta_title'),
+    description: (t as any)('meta_description'),
   };
 }
 
@@ -25,7 +25,7 @@ export default async function Process(props: IProcessProps) {
   setRequestLocale(locale);
   const t = await getTranslations({
     locale,
-    namespace: 'Process',
+    namespace: 'Process' as any,
   });
 
   const articles = [
@@ -94,9 +94,9 @@ export default async function Process(props: IProcessProps) {
       <section className="w-full py-16 lg:py-24">
         <Container>
           <div className="text-center mb-16">
-            <h1 className="u-display-xl mb-6 text-gray-900">{t('title')}</h1>
+            <h1 className="u-display-xl mb-6 text-gray-900">{(t as any)('title')}</h1>
             <p className="u-paragraph-l text-gray-600 max-w-3xl mx-auto">
-              {t('description')}
+              {(t as any)('description')}
             </p>
           </div>
         </Container>
@@ -169,9 +169,11 @@ export default async function Process(props: IProcessProps) {
                     <div className="h-full flex items-center justify-center">
                       <div className="text-center">
                         <div className="text-4xl mb-2">
-                          {article.category === '設計思考' ? '🧠' : 
-                           article.category === '文化觀察' ? '🏛️' : 
-                           article.category === '設計方法' ? '📐' : '🎭'}
+                          {article.category === '設計思考'
+                            ? '🧠'
+                            : article.category === '文化觀察'
+                              ? '🏛️'
+                              : article.category === '設計方法' ? '📐' : '🎭'}
                         </div>
                         <p className="text-sm text-gray-600">{article.category}</p>
                       </div>

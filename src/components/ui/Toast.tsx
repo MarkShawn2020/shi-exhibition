@@ -1,11 +1,11 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 export type ToastType = 'success' | 'error' | 'warning' | 'info';
 
-export interface ToastData {
+export type ToastData = {
   id: string;
   type: ToastType;
   titleKey?: string;
@@ -13,24 +13,25 @@ export interface ToastData {
   title?: string;
   message?: string;
   duration?: number;
-}
+};
 
-interface ToastItemProps {
+type ToastItemProps = {
   toast: ToastData;
   onClose: (id: string) => void;
-}
+};
 
 const ToastItem: React.FC<ToastItemProps> = ({ toast, onClose }) => {
   const t = useTranslations('notifications');
-  
+
   useEffect(() => {
     if (toast.duration !== 0) {
       const timer = setTimeout(() => {
         onClose(toast.id);
       }, toast.duration || 5000);
-      
+
       return () => clearTimeout(timer);
     }
+    return () => {};
   }, [toast.id, toast.duration, onClose]);
 
   const getToastStyles = () => {
@@ -61,8 +62,8 @@ const ToastItem: React.FC<ToastItemProps> = ({ toast, onClose }) => {
     }
   };
 
-  const title = toast.titleKey ? t(toast.titleKey) : toast.title;
-  const message = toast.messageKey ? t(toast.messageKey) : toast.message;
+  const title = toast.titleKey ? t(toast.titleKey as any) : toast.title;
+  const message = toast.messageKey ? t(toast.messageKey as any) : toast.message;
 
   return (
     <div className={`
@@ -70,13 +71,14 @@ const ToastItem: React.FC<ToastItemProps> = ({ toast, onClose }) => {
       transform transition-all duration-300 ease-in-out
       animate-in slide-in-from-right-full
       ${getToastStyles()}
-    `}>
+    `}
+    >
       <div className="flex-shrink-0 mr-3">
         <div className="flex items-center justify-center w-6 h-6 rounded-full text-sm font-bold">
           {getIcon()}
         </div>
       </div>
-      
+
       <div className="flex-1 min-w-0">
         {title && (
           <p className="text-sm font-medium">
@@ -89,11 +91,11 @@ const ToastItem: React.FC<ToastItemProps> = ({ toast, onClose }) => {
           </p>
         )}
       </div>
-      
+
       <button
         onClick={() => onClose(toast.id)}
         className="flex-shrink-0 ml-4 text-lg leading-none hover:opacity-70 transition-opacity"
-        aria-label={t('close')}
+        aria-label={(t as any)('close')}
       >
         ×
       </button>
@@ -101,13 +103,15 @@ const ToastItem: React.FC<ToastItemProps> = ({ toast, onClose }) => {
   );
 };
 
-interface ToastContainerProps {
+type ToastContainerProps = {
   toasts: ToastData[];
   onClose: (id: string) => void;
-}
+};
 
 export const ToastContainer: React.FC<ToastContainerProps> = ({ toasts, onClose }) => {
-  if (toasts.length === 0) return null;
+  if (toasts.length === 0) {
+    return null;
+  }
 
   return (
     <div className="fixed top-4 right-4 z-[100] w-full max-w-sm space-y-2">

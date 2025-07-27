@@ -12,7 +12,7 @@ const baseConfig: NextConfig = {
   poweredByHeader: false,
   reactStrictMode: true,
   experimental: {
-    turbo: false,
+    // Remove deprecated turbo option
   },
 };
 

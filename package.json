@@ -1,5 +1,6 @@
 {
   "name": "next-js-boilerplate",
+  "version": "0.1.1",
   "author": "Ixartz (https://github.com/ixartz)",
   "engines": {
     "node": ">=20"
@@ -37,11 +38,16 @@
     "@commitlint/types": "^19.8.1",
     "@hookform/resolvers": "^5.1.1",
     "@logtape/logtape": "^1.0.4",
+    "@react-three/drei": "^10.6.1",
+    "@react-three/fiber": "^9.2.0",
+    "@react-three/postprocessing": "^3.0.4",
     "@sentry/nextjs": "^9.37.0",
     "@supabase/supabase-js": "^2.49.1",
     "@t3-oss/env-nextjs": "^0.13.8",
+    "@types/three": "^0.178.1",
     "drizzle-orm": "^0.44.2",
     "import-in-the-middle": "^1.14.2",
+    "leva": "^0.10.0",
     "next": "^15.3.5",
     "next-intl": "^4.3.4",
     "pg": "^8.16.3",
@@ -50,6 +56,8 @@
     "react-dom": "19.1.0",
     "react-hook-form": "^7.60.0",
     "require-in-the-middle": "^7.5.2",
+    "socket.io-client": "^4.8.1",
+    "three": "^0.178.0",
     "vite": "^7.0.4",
     "zod": "^4.0.2",
     "zustand": "^5.0.6"
@@ -121,6 +129,5 @@
       "@semantic-release/release-notes-generator",
       "@semantic-release/github"
     ]
-  },
-  "version": "0.1.1"
+  }
 }
