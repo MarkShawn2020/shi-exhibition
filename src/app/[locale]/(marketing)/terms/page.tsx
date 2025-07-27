@@ -4,11 +4,12 @@ import React from 'react';
 import { LegalPage } from '@/components/legal/LegalPage';
 
 type Props = {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const t = await getTranslations({ locale: params.locale, namespace: 'TermsOfService' });
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'TermsOfService' });
 
   return {
     title: (t as any)('meta_title'),
@@ -17,7 +18,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function TermsPage({ params }: Props) {
-  const t = await getTranslations({ locale: params.locale, namespace: 'TermsOfService' });
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'TermsOfService' });
 
   const sections = [
     {
