@@ -11,7 +11,7 @@ const baseConfig: NextConfig = {
     dirs: ['.'],
   },
   poweredByHeader: false,
-  reactStrictMode: true,
+  reactStrictMode: false,
   experimental: {
     // Remove deprecated turbo option
   },
