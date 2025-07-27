@@ -15,9 +15,9 @@ const baseConfig: NextConfig = {
   experimental: {
     // Remove deprecated turbo option
   },
-  // Enable source maps for better error tracing
+  // Enable source maps for better error tracing in all environments
   productionBrowserSourceMaps: true,
-  webpack: (config, { dev }) => {
+  webpack: (config, { dev, isServer }) => {
     // Enable code inspector plugin in development and when CODE_INSPECTOR is explicitly enabled
     if (dev || process.env.CODE_INSPECTOR === 'true') {
       config.plugins.push(codeInspectorPlugin({
@@ -27,8 +27,9 @@ const baseConfig: NextConfig = {
       }));
     }
     
-    // Ensure source maps are generated in all environments for error tracking
-    if (!dev) {
+    // Force source map generation for client-side builds
+    if (!isServer) {
+      // Always use 'source-map' to generate separate .map files for proper debugging
       config.devtool = 'source-map';
     }
     
@@ -45,7 +46,7 @@ if (process.env.ANALYZE === 'true') {
 }
 
 // Conditionally enable Sentry configuration
-if (!process.env.NEXT_PUBLIC_SENTRY_DISABLED) {
+if (!process.env.NEXT_PUBLIC_SENTRY_DISABLED && process.env.NODE_ENV === 'production') {
   configWithPlugins = withSentryConfig(configWithPlugins, {
     // For all available options, see:
     // https://www.npmjs.com/package/@sentry/webpack-plugin#options

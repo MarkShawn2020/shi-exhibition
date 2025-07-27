@@ -10,6 +10,7 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "moduleResolution": "bundler",
     "isolatedModules": true,
+    "sourceMap": true,
 
     // ======================================================================
     // Type Safety - Foundation

@@ -9,7 +9,7 @@
     "dev:spotlight": "npx @spotlightjs/sidecar",
     "dev:next": "next dev --turbopack",
     "dev": "run-p dev:*",
-    "build:next": "next build",
+    "build:next": "next build --turbopack",  
     "build": "run-p build:* --race",
     "start": "next start",
     "build-stats": "cross-env ANALYZE=true npm run build",
