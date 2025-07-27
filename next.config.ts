@@ -15,8 +15,23 @@ const baseConfig: NextConfig = {
   experimental: {
     // Remove deprecated turbo option
   },
-  webpack: (config) => {
-    config.plugins.push(codeInspectorPlugin({ bundler: 'webpack' }));
+  // Enable source maps for better error tracing
+  productionBrowserSourceMaps: true,
+  webpack: (config, { dev }) => {
+    // Enable code inspector plugin in development and when CODE_INSPECTOR is explicitly enabled
+    if (dev || process.env.CODE_INSPECTOR === 'true') {
+      config.plugins.push(codeInspectorPlugin({
+        bundler: 'webpack',
+        // Keep source maps and enable in build mode if needed
+        dev: dev || process.env.CODE_INSPECTOR === 'true',
+      }));
+    }
+    
+    // Ensure source maps are generated in all environments for error tracking
+    if (!dev) {
+      config.devtool = 'source-map';
+    }
+    
     return config;
   },
 };
