@@ -1,6 +1,7 @@
 import type { NextConfig } from 'next';
 import withBundleAnalyzer from '@next/bundle-analyzer';
 import { withSentryConfig } from '@sentry/nextjs';
+import { codeInspectorPlugin } from 'code-inspector-plugin';
 import createNextIntlPlugin from 'next-intl/plugin';
 import './src/libs/Env';
 
@@ -13,6 +14,10 @@ const baseConfig: NextConfig = {
   reactStrictMode: true,
   experimental: {
     // Remove deprecated turbo option
+  },
+  webpack: (config) => {
+    config.plugins.push(codeInspectorPlugin({ bundler: 'webpack' }));
+    return config;
   },
 };
 
